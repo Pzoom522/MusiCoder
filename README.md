@@ -1,6 +1,6 @@
-![image](./img/llogo.png)
+![image](./doc/img/llogo.png)
 # 基于深度学习的轻量化音乐质感转换系统
-##项目简介
+## 项目简介
 ### 项目组件
 [Linux服务器端](https://github.com/Pzoom522/MusiCoder/tree/server)|[Windows客户端](https://github.com/Pzoom522/MusiCoder/tree/client-win)|[Mac OSX客户端](https://github.com/Pzoom522/MusiCoder/tree/client-osx)
 :-:|:-:|:-:
@@ -10,7 +10,7 @@
 <html>
 <center>
 <a href="https://www.bilibili.com/video/av22386731/" target="_blank">
-<img  width="60%" src="./img/pic.png?raw=true" />
+<img  width="60%" src="./doc/img/pic.png?raw=true" />
 </a>
 </center>
 </html>
@@ -23,7 +23,7 @@
 
 ### 整体架构
 
-![image](./img/overview.png)
+![image](./doc/img/overview.png)
 
 ---------
 ## MusiCoder-服务器端
@@ -65,8 +65,8 @@ __请分别解压并放置在 _converter/models_ 下__
 ### 数据传输信息
 此次客户端发行版本所连接的服务器[ip:端口]均为[106.39.42.39:2333]，但是对端口进行了分流
 此服务器性能较差（__双核cup，4G内存__）。如果想部署自己的服务，请针对服务器进行重新配置。具体的调整详见[帮助文档]()
-### 安装说明
-直接启动对应版本的安装包即可
+### 安装及运行说明
+直接启动对应版本的安装包即可安装。安装完成后，联网条件下启动MusiCoder{.exe/.pkg}进行使用。
 
 
 ### 使用说明
