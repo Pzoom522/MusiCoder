@@ -63,11 +63,19 @@ __请分别解压并放置在 _converter/models_ 下__
 - 暂无特殊环境要求。如果发现，请在[issue](https://github.com/Pzoom522/MusiCoder/issues)中提出。
 
 ### 数据传输信息
-此次客户端发行版本所连接的服务器[ip:端口]为[106.39.42.39:2333]
-此服务器性能较差（__双核cup，4G内存__）。如果想部署自己的服务，请针对服务器进行重新配置。具体的调整详见[帮助文档]()
+此次客户端发行版本所连接的服务器[ip:端口]为[140.143.62.99:2333]
+此服务器性能较差（__双核cup，4G内存__）。如果想部署自己的服务，请针对服务器进行重新配置。具体的调整详见[帮助文档](https://github.com/Pzoom522/MusiCoder/wiki/2.0-Requirements-&-Installation#%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2)
 ### 安装及运行说明
-直接启动对应版本的安装包即可安装。安装完成后，联网条件下启动MusiCoder.exe进行使用。
+直接启动对应版本的安装包即可安装。安装完成后，联网条件下启动，进行使用。
 
 
 ### 使用说明
 详见[帮助文档](https://github.com/Pzoom522/MusiCoder/wiki)
+
+## TODO
+- [ ] 改善客户端交互
+- [ ] 提升后台速度(我们需要更好的服务器。欢迎投喂比特币
+:moneybag:到[1JyMBHSvReQYvoUDAKaKo9amABcLRqsjsq]())
+- [ ] 发行Mac OSX版本
+- [ ] 修复出现的bug
+- [ ] 开源训练代码

@@ -394,24 +394,29 @@ class Window(QtGui.QWidget):
         self.cv = QtGui.QPushButton('',parent=self)
         self.cv.setEnabled(False)
         self.cv.setStyleSheet('QPushButton{background:transparent;background-image:url(%s)}'%design.ConvertButton.back_unable)
+        self.cv.setToolTip('choose quality & launch transfer')
 
         #help(info) button
         hp = QtGui.QPushButton('',parent=self)
         hp.setStyleSheet('QPushButton {background:transparent;background-image:url(%s)}' % design.HelpButton.back)
+        hp.setToolTip('help')
 
         #cut button
         self.sl = QtGui.QPushButton('',parent=self)
         self.sl.setStyleSheet('QPushButton {background:transparent;background-image:url(%s)}' % design.SelectButton.back_unable)
         self.sl.setEnabled(False)
+        self.sl.setToolTip('edit music')
 
         #save button
         self.sv = QtGui.QPushButton('',parent=self)
         self.sv.setEnabled(False)
         self.sv.setStyleSheet('QPushButton{background:transparent;background-image:url(%s)}'%design.SaveButton.back_unable)
+        self.sv.setToolTip('save as')
 
         #texture button
         self.select_style = QtGui.QPushButton('',parent = self)
         self.select_style.setStyleSheet('QPushButton{background:transparent;background-image:url(%s)}'%design.StyleButton.back)
+        self.select_style.setToolTip('pick target texture')
 
         #two players
         self.pl1 = QPlayer(parent=self)
@@ -565,6 +570,8 @@ class Window(QtGui.QWidget):
         #self.psc.setEnabled(True)
         self.sv.setEnabled(True)
         self.sv.setStyleSheet('QPushButton{background:transparent;background-image:url(%s)}'%design.SaveButton.back)
+        self.cv.setEnabled(True)
+        #elf.cv.setStyleSheet('QPushButton{background:transparent;background-image:url(%s)}'%design.ConvertButton.back)
 
     #DELETE button clicked
     def dbClicked(self):
@@ -729,7 +736,7 @@ class Window(QtGui.QWidget):
         #befor closing the window, clear the temp folder
         try:
             shutil.rmtree('Temp')
-            os.mkdir('Temp')
+            shutil.rmtree('Img')
         except:
             pass
         event.accept()

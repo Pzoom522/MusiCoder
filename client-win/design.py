@@ -5,7 +5,7 @@ import os
 #these are modules that contain background images of widgets
 import convert,convert_unable,delete,dialog,help_,icon,label_back
 import pause,play_unable,play,save,save_unable,select_segment,ok,warn
-import select_segment_unable,style,window_back,area,style_unable
+import select_segment_unable,style,window_back,area,style_unable,progress
 
 #making sure a folder named Img exist in current path
 if os.path.exists('Img')!=True:
@@ -16,6 +16,9 @@ tmp.write(base64.b64decode(dialog.img))
 tmp.close()
 tmp = open('Img/label_back.png','wb+')
 tmp.write(base64.b64decode(label_back.img))
+tmp.close()
+tmp = open('Img/progress.gif','wb+')
+tmp.write(base64.b64decode(progress.img))
 tmp.close()
 
 #designs for each widgets of gui, including size, position and image path

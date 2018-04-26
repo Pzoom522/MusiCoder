@@ -36,7 +36,9 @@ def balanceSound(originalPath):
         newPath = 'Temp/'+name+ext
         
     #filter the original song using ffmpeg, and output to Temp file
-    os.popen('ffmpeg -loglevel panic -i '+originalPath+' -filter:a loudnorm '+newPath)
+    convert='.\\ffmpeg -loglevel panic -i \"'+originalPath+'\" -filter:a loudnorm '+newPath
+    print "conv",convert
+    os.popen(convert)
     print('balanced: '+newPath)
     return newPath
 

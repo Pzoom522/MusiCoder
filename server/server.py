@@ -2,7 +2,6 @@
 import socket,time,struct,os,sys,threading,backend_run
 import hashlib
 import time
-
 def log(ip,message):
     #1. format time-ip-message
     #2. log to a file 
@@ -111,7 +110,6 @@ class Server:
                         self.sendFile(connection,task.endecoder.trans_audio_path)
 
                         #7. Remove all temp files
-                        os.remove(task.endecoder.content_img_path)
                         os.remove(task.endecoder.trans_img_path)
                         os.remove(task.endecoder.trans_audio_path)
                         print('send done')
@@ -121,9 +119,12 @@ class Server:
             except Exception as ex:
                 print(ex)
                 print("process error")
+                os.remove(task.endecoder.content_img_path)
                 connection.close()
                 return 
-                        
+                #break
+        os.remove(task.endecoder.content_img_path)
+        #print ("Service for "+connection.gethostname()+" exit.")        
 
     def listen(self,maxClients):
         #1. Listeing for connection. The maximal of clients waiting for connection is defined by maxClients
@@ -154,12 +155,13 @@ def bind(ip,port):
         s=socket.socket(socket.AF_INET,socket.SOCK_STREAM) 
         s.bind((ip,port)) 
 
-        return Server(s)  
-    
-def main(args):
-    port=int(args[1])%65535 #set the port use sys argv 
-    server=bind('0.0.0.0',port)     #0.0.0.0 refers to this host itself
-    server.listen(5)
+        return Server(s)      
 
 if __name__ == '__main__':
-    main(sys.argv)
+    port=0
+    if len(sys.argv)==1:
+        port=5050                   #default port is 5050
+    else:
+        port=int(sys.argv[1])%65535 #set the port use sys argv 
+    server=bind('0.0.0.0',port)     #0.0.0.0 refers to this host itself
+    server.listen(5)
