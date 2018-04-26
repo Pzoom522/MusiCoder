@@ -1,5 +1,8 @@
 ![image](./doc/img/llogo.png)
 # 基于深度学习的轻量化音乐质感转换系统
+
+![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)  [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://github.com/Pzoom522/MusiCoder)  ![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)  [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)  [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)  ![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)  [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Pzoom522/MusiCoder/blob/master/LICENSE)
+
 ## 项目简介
 ### 项目组件
 [Linux服务器端](https://github.com/Pzoom522/MusiCoder/tree/master/server)|[Windows客户端](https://github.com/Pzoom522/MusiCoder/tree/master/client-win)|[Mac OSX客户端(尚未发布)](https://github.com/Pzoom522/MusiCoder/tree/master/client-osx)
