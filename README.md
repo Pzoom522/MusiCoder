@@ -2,7 +2,7 @@
 # 基于深度学习的轻量化音乐质感转换系统
 ## 项目简介
 ### 项目组件
-[Linux服务器端](https://github.com/Pzoom522/MusiCoder/tree/server)|[Windows客户端](https://github.com/Pzoom522/MusiCoder/tree/client-win)|[Mac OSX客户端](https://github.com/Pzoom522/MusiCoder/tree/client-osx)
+[Linux服务器端](https://github.com/Pzoom522/MusiCoder/tree/server)|[Windows客户端](https://github.com/Pzoom522/MusiCoder/tree/client-win)|[Mac OSX客户端(尚未发布)](https://github.com/Pzoom522/MusiCoder/tree/client-osx)
 :-:|:-:|:-:
 
 
@@ -59,14 +59,14 @@ __请分别解压并放置在 _converter/models_ 下__
 ## MusiCoder-客户端
 ![img](https://github.com/Pzoom522/MusiCoder/blob/master/doc/img/client.png?raw=true)
 ### 配置要求
-- 较新的Window&Mac OSX系统。4G内存及以上。
+- 较新的Window系统。4G内存及以上。
 - 暂无特殊环境要求。如果发现，请在[issue](https://github.com/Pzoom522/MusiCoder/issues)中提出。
 
 ### 数据传输信息
-此次客户端发行版本所连接的服务器[ip:端口]均为[106.39.42.39:2333]，但是对端口进行了分流
+此次客户端发行版本所连接的服务器[ip:端口]为[106.39.42.39:2333]
 此服务器性能较差（__双核cup，4G内存__）。如果想部署自己的服务，请针对服务器进行重新配置。具体的调整详见[帮助文档]()
 ### 安装及运行说明
-直接启动对应版本的安装包即可安装。安装完成后，联网条件下启动MusiCoder{.exe/.pkg}进行使用。
+直接启动对应版本的安装包即可安装。安装完成后，联网条件下启动MusiCoder.exe进行使用。
 
 
 ### 使用说明
