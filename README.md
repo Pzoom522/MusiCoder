@@ -1,7 +1,7 @@
 ![image](./doc/img/llogo.png)
 # 基于深度学习的轻量化音乐质感转换系统
 
-![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)  [![made-with-python](https://img.shields.io/badge/Made%20with-Python-purple.svg)](https://www.python.org/)  [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)  ![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)  ![AGPLv3 license](https://img.shields.io/badge/License-AGPLv3-blue.svg)  ![Status](https://img.shields.io/pypi/status/ansicolortags.svg)  ![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)  ![BUAA !](https://img.shields.io/badge/BUAAER%3F-yes-blue.svg)  
+![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)  [![made-with-python](https://img.shields.io/badge/Made%20with-Python-purple.svg)](https://www.python.org/)  [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)  ![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)  ![AGPLv3 license](https://img.shields.io/badge/License-AGPLv3-blue.svg)  ![Status](https://img.shields.io/pypi/status/ansicolortags.svg)  ![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)  [![BUAA !](https://img.shields.io/badge/BUAAER%3F-yes-blue.svg)](http://www.buaa.edu.cn/)  
 
 ## 项目简介
 ### 项目组件
