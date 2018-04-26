@@ -2,7 +2,7 @@
 # 基于深度学习的轻量化音乐质感转换系统
 ## 项目简介
 ### 项目组件
-[Linux服务器端](https://github.com/Pzoom522/MusiCoder/tree/server)|[Windows客户端](https://github.com/Pzoom522/MusiCoder/tree/client-win)|[Mac OSX客户端(尚未发布)](https://github.com/Pzoom522/MusiCoder/tree/client-osx)
+[Linux服务器端](https://github.com/Pzoom522/MusiCoder/tree/master/server)|[Windows客户端](https://github.com/Pzoom522/MusiCoder/tree/master/client-win)|[Mac OSX客户端(尚未发布)](https://github.com/Pzoom522/MusiCoder/tree/master/client-osx)
 :-:|:-:|:-:
 
 
