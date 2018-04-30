@@ -73,7 +73,7 @@ __请分别解压并放置在 _converter/models_ 下__
 
 
 ### 使用说明
-详见[帮助文档](https://github.com/Pzoom522/MusiCoder/wiki)
+详见[帮助文档](https://github.com/Pzoom522/MusiCoder/wiki):book:
 
 ## TODO
 - [ ] 改善客户端交互
