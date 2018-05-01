@@ -1,13 +1,16 @@
 ![image](./doc/img/llogo.png)
 # 基于深度学习的轻量化音乐质感转换系统
 
-![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)  [![made-with-python](https://img.shields.io/badge/Made%20with-Python-purple.svg)](https://www.python.org/)  [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)  ![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)  ![AGPLv3 license](https://img.shields.io/badge/License-AGPLv3-blue.svg)  ![Status](https://img.shields.io/pypi/status/ansicolortags.svg)  ![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)  [![BUAA !](https://img.shields.io/badge/BUAAER%3F-yes-blue.svg)](http://www.buaa.edu.cn/)  
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://sourceforge.net/projects/musicoder/)  [![made-with-python](https://img.shields.io/badge/Made%20with-Python-purple.svg)](https://www.python.org/)  [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)  [![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](https://github.com/Pzoom522/Musicoder/wiki)  [![AGPLv3 license](https://img.shields.io/badge/License-AGPLv3-blue.svg)](https://github.com/Pzoom522/MusiCoder/blob/master/LICENSE)  [![Status](https://img.shields.io/pypi/status/ansicolortags.svg)](https://github.com/Pzoom522/MusiCoder/releases)  [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/Pzoom522/MusiCoder/issues)  [![BUAA !](https://img.shields.io/badge/BUAAER%3F-yes-blue.svg)](http://www.buaa.edu.cn/)  
 
 ## 项目简介
 ### 项目组件
 [Linux服务器端](https://github.com/Pzoom522/MusiCoder/tree/master/server)|[Windows客户端](https://github.com/Pzoom522/MusiCoder/tree/master/client-win)|[Mac OSX客户端(尚未发布)](https://github.com/Pzoom522/MusiCoder/tree/master/client-osx)
 :-:|:-:|:-:
 
+### 使用方法
+- :wrench:下载发行版，请访问[release]()或[项目页面](https://sourceforge.net/projects/musicoder/)
+- :book:软件说明详见[帮助文档](https://github.com/Pzoom522/MusiCoder/wiki)
 
 ### 介绍视频
 <html>
@@ -71,9 +74,6 @@ __请分别解压并放置在 _converter/models_ 下__
 ### 安装及运行说明
 直接启动对应版本的安装包即可安装。安装完成后，联网条件下启动，进行使用。
 
-
-### 使用说明
-详见[帮助文档](https://github.com/Pzoom522/MusiCoder/wiki):book:
 
 ## TODO
 - [ ] 改善客户端交互
