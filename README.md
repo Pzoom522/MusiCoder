@@ -9,7 +9,7 @@
 :-:|:-:|:-:
 
 ### 使用方法
-- :wrench:下载发行版，请访问[release]()或[项目页面](https://sourceforge.net/projects/musicoder/)
+- :wrench:下载发行版，请访问[release](https://github.com/Pzoom522/MusiCoder/releases)或[项目页面](https://sourceforge.net/projects/musicoder/)
 - :book:软件说明详见[帮助文档](https://github.com/Pzoom522/MusiCoder/wiki)
 
 ### 介绍视频
