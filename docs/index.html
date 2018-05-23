@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>MusiCoder-Intro(open version)</title>
+
+		<meta name="description" content="Music Texture Transfer System">
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+
+
+	</head>
+	<body class="reveal-viewport theme-font-palatino theme-color-yellow-black">
+		<div class="reveal">
+			<div class="slides">
+				<section data-id="18d58d14e5810db7c871ea5bfa936bb4"><div class="sl-block" data-block-type="text" data-block-id="931ac160292a2acc197ecf7530413b72" style="height: auto; min-width: 30px; min-height: 30px; width: 1133px; left: 74px; top: 216px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<h1 style="text-align: center;"><span style="font-size:1.0em"><span style="color:#000000"><strong>基于深度学习的<br>
+轻量化音乐质感转换系统</strong></span></span></h1>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="aad4c8bb8136e52c1284965d5ec13a3c" style="min-width: 4px; min-height: 4px; width: 663px; height: 119px; left: 310px; top: 85px;"><div class="sl-block-content" style="z-index: 12;"><img data-natural-width="2500" data-natural-height="449" style="" data-lazy-loaded="" data-src="musicoder/65acbc148ac42301c8e204882c9591b2.png"></div></div>
+
+
+
+<div class="sl-block" data-block-type="text" data-block-id="38f9b781973f89863e8cba01f901bad7" style="height: auto; min-width: 30px; min-height: 30px; width: 1065px; left: 109px; top: 476px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;">
+<p><span style="font-size:1.2em"><strong>组员：</strong>彭煦潭  蔡帜  金银株  张嘉  石发强</span></p>
+
+<p><span style="font-size:1.2em"><strong>指导团队：</strong>李建欣  李晨</span> <span style="color:rgb(0, 128, 128)"><span style="font-size:1.2em">@北航计算机学院新技术研究所(ACT)</span></span></p>
+</div></div></section><section class="stack" data-id="30d67a56adb1109b136a0b0ac68cee2d"><section data-id="646bbdcedfc61eb135d019802fafe3c9"><div class="sl-block" data-block-type="text" data-block-id="7da87f7ca5f9c817db639bd2d5d7f158" style="height: auto; min-width: 30px; min-height: 30px; width: 1026px; left: 182px; top: 121px;"><div class="sl-block-style" style="z-index: 13; transform: rotate(360deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="fade-in">
+<p style="text-align:left"><span style="font-size:1.8em">概念：如同给图片『加滤镜』，自由地给</span></p>
+
+<p style="text-align:left"><span style="font-size:1.8em">            歌曲赋予其它音频的质感。</span></p>
+</div></div></div>
+
+<div class="sl-block" data-block-type="text" data-block-id="96bd9a681224b60defb27425d53e07e3" style="height: auto; min-width: 30px; min-height: 30px; width: 794px; left: 243px; top: 23px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; transition-duration: 0.6s; transition-delay: 0.6s;" dir="ui" data-animation-type="slide-down">
+<h1><span style="color:#008080"><span style="font-size:1.0em"><strong>音乐质感转换</strong></span></span></h1>
+</div></div>
+
+
+<div class="sl-block" data-block-type="image" data-block-id="c8adaf7386ac9b2fc71449b115f68c79" style="min-width: 4px; min-height: 4px; width: 299px; height: 180px; left: 127px; top: 489px;"><div class="sl-block-content" style="z-index: 15; transition-duration: 0.6s; transition-delay: 1.2s;" data-animation-type="slide-right"><img data-natural-width="290" data-natural-height="174" style="" data-lazy-loaded="" data-src="musicoder/86488c177e02e6f790b4a8c8fdfd4876.jpg"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="a4d2ef025a55e1946aa6efe80c63285f" style="min-width: 4px; min-height: 4px; width: 299px; height: 171px; left: 127px; top: 269px;"><div class="sl-block-content" style="z-index: 16; transition-duration: 0.6s; transition-delay: 1.2s;" data-animation-type="slide-right"><img data-natural-width="224" data-natural-height="128" style="" data-lazy-loaded="" data-src="musicoder/ddb122ab2eec4efa12de6b1c9e2eb4b9.gif"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="3001c109e18d61942a2dc38eb7beeedc" style="min-width: 4px; min-height: 4px; width: 299px; height: 171px; left: 854px; top: 391px;"><div class="sl-block-content fragment fade-down" style="z-index: 17;" data-fragment-index="1"><img data-natural-width="224" data-natural-height="128" style="" data-lazy-loaded="" data-src="musicoder/f74987cdf6ee63a049d36017be47e533.gif"></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="2ded5b89c26142b355c827e35f527916" style="height: auto; min-width: 30px; min-height: 30px; width: 193px; left: 180px; top: 440px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; transition-duration: 0.6s; transition-delay: 1.2s;" data-animation-type="slide-right">
+<p>content</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 193px; left: 180px; top: 669px;" data-block-id="2b6ca518325642ef86a6694c8ee684f6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19; transition-duration: 0.6s; transition-delay: 1.2s;" data-animation-type="slide-right">
+<p>style</p>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="75c60fd80743ea65a8ede6dd002da21d" style="min-width: 4px; min-height: 4px; width: 129px; height: 129px; left: 615px; top: 415px;"><div class="sl-block-style" style="z-index: 20;"><div class="sl-block-content fragment fade-up" style="z-index: 20; border-style: dashed; border-width: 7px;" data-inline-svg="false" data-fragment-index="0"><img data-natural-width="24" data-natural-height="24" style="" data-lazy-loaded="" data-src="musicoder/c411022da0bb235304403dc5e5e88ada.svg"></div></div></div>
+<div class="sl-block" data-block-type="shape" data-block-id="356ece6da9c6b17952cf2ec6131e9a36" style="min-width: 4px; min-height: 4px; width: 213px; height: 53px; left: 419px; top: 384px;"><div class="sl-block-style" style="z-index: 12; transform: rotate(32deg);"><div class="sl-block-content fragment fade-right" data-shape-type="arrow-right" data-shape-fill-color="#000000" data-shape-stretch="true" style="z-index: 12;" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 213 53"><polygon points="0,15.899999999999999 106.5,15.899999999999999 106.5,0 213,26.5 106.5,53 106.5,37.099999999999994 0,37.099999999999994" class="shape-element" fill="#000000"></polygon></svg></div></div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 205px; height: 53px; left: 423px; top: 520px;" data-block-id="47ba299fc2c5dd15c130a1b0924c7504"><div class="sl-block-style" style="z-index: 11; transform: rotate(333deg);"><div class="sl-block-content fragment fade-right" data-shape-type="arrow-right" data-shape-fill-color="#000000" data-shape-stretch="true" style="z-index: 11;" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 205 53"><polygon points="0,15.899999999999999 102.5,15.899999999999999 102.5,0 205,26.5 102.5,53 102.5,37.099999999999994 0,37.099999999999994" class="shape-element" fill="#000000"></polygon></svg></div></div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 98px; height: 52px; left: 754px; top: 452px;" data-block-id="256cffe188a82081af90e16560a4b7e4"><div class="sl-block-style" style="z-index: 21;"><div class="sl-block-content fragment fade-right" data-shape-type="arrow-right" data-shape-fill-color="#000000" data-shape-stretch="true" style="z-index: 21;" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 98 52"><polygon points="0,15.6 49,15.6 49,0 98,26 49,52 49,36.4 0,36.4" class="shape-element" fill="#000000"></polygon></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 193px; left: 907px; top: 562px;" data-block-id="49736885dc69bd7380a3a395a79660e0"><div class="sl-block-content fragment fade-down" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 22;" data-fragment-index="1">
+<p>stylized</p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 345px; height: 62px; left: 935px; top: 658px;" data-block-id="15ab085d4f3b866165e7f845194549dd"><div class="sl-block-content" style="z-index: 23;"><img data-natural-width="2500" data-natural-height="449" style="" data-lazy-loaded="" data-src="musicoder/65acbc148ac42301c8e204882c9591b2.png"></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="6664c2341bc8483e4c8a0f2b8324c937" style="height: auto; min-width: 30px; min-height: 30px; width: 678px; left: 486px; top: 622px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 24; transition-duration: 0.6s; transition-delay: 1.5s;" data-animation-type="slide-left">
+<pre>(图片来自Jun-Yan Zhu et.al., ICCV 2017)</pre>
+</div></div></section><section data-id="08d1fbfe6ba1b94ab7a6c7f1cd1a0d73"><div class="sl-block" data-block-type="text" style="height: auto; width: 1131px; left: 80px; top: 132px;" data-block-id="c0871c049a04bb1014885b2d9edbdce8"><div class="sl-block-style" style="z-index: 10; transform: rotate(360deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="scale-up">
+<h3 style="text-align:left"><span style="font-size:1.2em"><strong><span style="color:#FF0000">挑战1.</span></strong> <strong>缺乏有效的表示方法</strong></span></h3>
+
+<ul>
+	<li style="text-align:left"><span style="font-size:1.2em">连续性——不同于<strong>自然语言处理</strong></span></li>
+	<li style="text-align:left"><span style="font-size:1.2em">时序性——不同于<strong>图形图像</strong></span></li>
+</ul>
+</div></div></div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 707px; left: 286px; top: 23px;" data-block-id="a1cb44080aa808f2e35c4584a38a7624"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; transition-duration: 0.6s; transition-delay: 0.6s;" dir="ui" data-animation-type="slide-down">
+<h1><span style="color:#008080"><span style="font-size:1.0em"><strong>音乐质感转换-挑战</strong></span></span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 1094px; left: 80px; top: 313px;" data-block-id="2e41efea0e806822a51f0219d51eb0ef"><div class="sl-block-style" style="z-index: 13; transform: rotate(360deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; transition-duration: 0.6s; transition-delay: 0.9s;" data-animation-type="scale-up">
+<h3 style="text-align:left"><span style="font-size:1.2em"><strong><span style="color:#FF0000">挑战2. </span>缺乏可行的转换方案</strong></span></h3>
+
+<ul>
+	<li style="text-align:left"><span style="font-size:1.2em">典型方法：基于规则进行滤波</span></li>
+	<li style="text-align:left"><span style="font-size:1.2em">速度慢，效果差</span></li>
+</ul>
+</div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 950px; left: 79px; top: 504px;" data-block-id="e0895ce0bb933d55266524061d66650e"><div class="sl-block-style" style="z-index: 14; transform: rotate(360deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; transition-duration: 0.6s; transition-delay: 1.2s;" data-animation-type="scale-up">
+<h3 style="text-align:left"><span style="font-size:1.2em"><span style="color:#FF0000"><strong>挑战3. </strong></span><strong>缺乏高速的重建算法</strong></span></h3>
+
+<ul>
+	<li style="text-align:left"><span style="font-size:1.2em">全过程损失难以收敛</span></li>
+	<li style="text-align:left"><span style="font-size:1.2em">编码速度过慢</span></li>
+</ul>
+</div></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="989c3653c4edf6874050ebd3fa2488eb" style="min-width: 4px; min-height: 4px; width: 143px; height: 143px; left: 1008px; top: 145px;"><div class="sl-block-content" style="z-index: 15; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="scale-up"><img style="" data-natural-width="128" data-natural-height="128" data-lazy-loaded="" data-src="musicoder/ff9954a518a1f19cc70bb9b42ce56093.png"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="3bc092c93054eac199f507c08afe08d4" style="min-width: 4px; min-height: 4px; width: 160px; height: 160px; left: 1000px; top: 318px;"><div class="sl-block-content" style="z-index: 16; transition-duration: 0.6s; transition-delay: 0.9s;" data-animation-type="scale-up"><img style="" data-natural-width="128" data-natural-height="128" data-lazy-loaded="" data-src="musicoder/e73f71d9f54c5fe6c264ca1227991a30.png"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="c2236e31367e6592a97438e760993850" style="min-width: 4px; min-height: 4px; width: 144px; height: 144px; left: 1007px; top: 504px;"><div class="sl-block-content" style="z-index: 17; transition-duration: 0.6s; transition-delay: 1.2s;" data-animation-type="scale-up"><img style="" data-natural-width="128" data-natural-height="128" data-lazy-loaded="" data-src="musicoder/4d73117c0e7a58cf7ce7eaa3b77e6798.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 345px; height: 62px; left: 935px; top: 658px;" data-block-id="ab74c1d2defe19405998f01787b24c80"><div class="sl-block-content" style="z-index: 18;"><img data-natural-width="2500" data-natural-height="449" style="" data-lazy-loaded="" data-src="musicoder/65acbc148ac42301c8e204882c9591b2.png"></div></div></section></section><section data-id="470e206a29b93a7838c021b1e0902eb6">
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 340px; top: 459px;" data-block-id="fcb152887d1ed067b7890ed5ee474b86"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; transition-duration: 0.6s; transition-delay: 0.6s;" dir="ui" data-animation-type="scale-up">
+<h1><span style="font-size:1.2em"><strong>演示时间</strong></span></h1>
+</div></div>
+
+<div class="sl-block" data-block-type="image" data-block-id="7f8c6adaf9779c1fc07f816b15c3daa3" style="min-width: 4px; min-height: 4px; width: 400px; height: 400px; left: 440px; top: 88px;"><div class="sl-block-content" style="z-index: 11; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="scale-up"><img style="" data-natural-width="48" data-natural-height="48" data-lazy-loaded="" data-src="musicoder/edd9729bfb2edb7965251e5f326bc409.svg"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 345px; height: 62px; left: 935px; top: 658px;" data-block-id="254b92a2f09729c90f7a285a9bd52c8d"><div class="sl-block-content" style="z-index: 13;"><img data-natural-width="2500" data-natural-height="449" style="" data-lazy-loaded="" data-src="musicoder/65acbc148ac42301c8e204882c9591b2.png"></div></div></section><section class="stack" data-id="28551a6b1f7a739d7b7f053d77fd714f"><section data-id="4dca6162d4e38d37006051b4c2063d93">
+<div class="sl-block" data-block-type="text" style="height: auto; width: 824px; left: 228px; top: 23px;" data-block-id="94765e9f7db2f98e6074080fa1c39336"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="scale-up">
+<h1><span style="color:#008080"><strong>组件：音频-频谱转换器</strong></span></h1>
+</div></div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 560px; left: 711px; top: 223px;" data-block-id="9e98126f90a294a4a5b904dfc115747d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-left">
+<h2 style="text-align:left">Step 1:</h2>
+
+<ul>
+	<li><span style="font-size:1.4em">短时傅里叶变换(Short Time Fourier Transform, STFT)</span></li>
+	<li><span style="font-size:1.4em">保留强度分量(Magnitude Component)</span></li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="video" data-block-id="58a0f2149b8c3a7cc07c20d665a01371" style="min-width: 30px; min-height: 30px; width: 691px; height: 554px; left: 14px; top: 144px;"><div class="sl-block-content" style="z-index: 13;" data-media-id="4928748" data-video-thumb="https://s3.amazonaws.com/media-p.slid.es/videos/774638/LKdgp858/ezgif_thumb_00001.jpg"><video playsinline="" controls="controls" poster="https://s3.amazonaws.com/media-p.slid.es/videos/774638/LKdgp858/ezgif_thumb_00001.jpg" data-paused-by-reveal="" data-lazy-loaded="" data-src="musicoder/8f108afe2cb76ce75a2b71daa15dacb2.mp4"></video></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 345px; height: 62px; left: 935px; top: 658px;" data-block-id="663acb1ec5436e2457369c72c52df078"><div class="sl-block-content" style="z-index: 14;"><img data-natural-width="2500" data-natural-height="449" style="" data-lazy-loaded="" data-src="musicoder/65acbc148ac42301c8e204882c9591b2.png"></div></div></section><section data-id="a8a96327deb3a0b8ccbdc870eeec447f"><div class="sl-block" data-block-type="text" style="height: auto; width: 824px; left: 228px; top: 23px;" data-block-id="07fb012c495735ec07cc43548f04d24f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<h1><span style="color:#008080"><strong>组件：音频-频谱转换器</strong></span></h1>
+</div></div>
+
+<div class="sl-block" data-block-type="image" data-block-id="6e0173a69fdbef3a0b38759ba7e71a90" style="min-width: 4px; min-height: 4px; width: 640px; height: 538px; left: 0px; top: 133px;"><div class="sl-block-content fragment" style="z-index: 13;" data-fragment-index="1"><img style="" data-natural-width="1025" data-natural-height="861" data-lazy-loaded="" data-src="musicoder/e2b2eb7db5385d73a25bb408ce24758e.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 214px; left: 789px; top: 144px;" data-block-id="da82dc0f67b7be317e156a22b02e5209"><div class="sl-block-content fragment current-visible" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; border-style: dashed; border-width: 3px;" data-fragment-index="1">
+<pre style="text-align:left"><span style="font-size:1.6em"><strong><span style="color:#FF0000">Step 1. </span></strong>
+幅值转换</span></pre>
+</div></div>
+<div class="sl-block" data-block-type="math" data-block-id="18c1f56467124e9dcda9416b79ac3622" style="width: auto; height: auto; min-width: 30px; min-height: 30px; left: 112px; top: 215px;"><div class="sl-block-content notranslate fragment current-visible" style="z-index: 15; color: rgb(255, 255, 255);" data-fragment-index="1">
+<div class="math-input">X_{dB}=20 log(X_{i} / r)</div>
+<div class="math-output"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>X</mi><mrow><mi>d</mi><mi>B</mi></mrow></msub><mo>=</mo><mn>2</mn><mn>0</mn><mi>l</mi><mi>o</mi><mi>g</mi><mo>(</mo><msub><mi>X</mi><mrow><mi>i</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>r</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">X_{dB}=20 log(X_{i} / r)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit" style="margin-right: 0.07847em;">X</span><span class="msupsub"><span class="vlist"><span class="" style="top: 0.15em; margin-right: 0.05em; margin-left: -0.07847em;"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">d</span><span class="mord mathit mtight" style="margin-right: 0.05017em;">B</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span>​</span></span></span></span><span class="mrel">=</span><span class="mord mathrm">2</span><span class="mord mathrm">0</span><span class="mord mathit" style="margin-right: 0.01968em;">l</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right: 0.03588em;">g</span><span class="mopen">(</span><span class="mord"><span class="mord mathit" style="margin-right: 0.07847em;">X</span><span class="msupsub"><span class="vlist"><span class="" style="top: 0.15em; margin-right: 0.05em; margin-left: -0.07847em;"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">i</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span>​</span></span></span></span><span class="mord mathrm">/</span><span class="mord mathit" style="margin-right: 0.02778em;">r</span><span class="mclose">)</span></span></span></span></div>
+</div></div>
+
+
+
+<div class="sl-block" data-block-type="math" data-block-id="5ab7198b6512f2c8af0ce20fc2dddaaa" style="width: auto; height: auto; min-width: 30px; min-height: 30px; left: 697px; top: 477px;"><div class="sl-block-style" style="z-index: 25;"><div class="sl-block-content notranslate fragment current-visible" style="z-index: 25; font-size: 75%; color: rgb(0, 0, 0);" data-fragment-index="2">
+<div class="math-input">X_a=X_{dB} \odot H_{dB}+ min(X_{dB})\lnot H_{dB}</div>
+<div class="math-output"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>X</mi><mi>a</mi></msub><mo>=</mo><msub><mi>X</mi><mrow><mi>d</mi><mi>B</mi></mrow></msub><mo>⊙</mo><msub><mi>H</mi><mrow><mi>d</mi><mi>B</mi></mrow></msub><mo>+</mo><mi>m</mi><mi>i</mi><mi>n</mi><mo>(</mo><msub><mi>X</mi><mrow><mi>d</mi><mi>B</mi></mrow></msub><mo>)</mo><mi mathvariant="normal">¬</mi><msub><mi>H</mi><mrow><mi>d</mi><mi>B</mi></mrow></msub></mrow><annotation encoding="application/x-tex">X_a=X_{dB} \odot H_{dB}+ min(X_{dB})\lnot H_{dB}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit" style="margin-right: 0.07847em;">X</span><span class="msupsub"><span class="vlist"><span class="" style="top: 0.15em; margin-right: 0.05em; margin-left: -0.07847em;"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight">a</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span>​</span></span></span></span><span class="mrel">=</span><span class="mord"><span class="mord mathit" style="margin-right: 0.07847em;">X</span><span class="msupsub"><span class="vlist"><span class="" style="top: 0.15em; margin-right: 0.05em; margin-left: -0.07847em;"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">d</span><span class="mord mathit mtight" style="margin-right: 0.05017em;">B</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span>​</span></span></span></span><span class="mbin">⊙</span><span class="mord"><span class="mord mathit" style="margin-right: 0.08125em;">H</span><span class="msupsub"><span class="vlist"><span class="" style="top: 0.15em; margin-right: 0.05em; margin-left: -0.08125em;"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">d</span><span class="mord mathit mtight" style="margin-right: 0.05017em;">B</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span>​</span></span></span></span><span class="mbin">+</span><span class="mord mathit">m</span><span class="mord mathit">i</span><span class="mord mathit">n</span><span class="mopen">(</span><span class="mord"><span class="mord mathit" style="margin-right: 0.07847em;">X</span><span class="msupsub"><span class="vlist"><span class="" style="top: 0.15em; margin-right: 0.05em; margin-left: -0.07847em;"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">d</span><span class="mord mathit mtight" style="margin-right: 0.05017em;">B</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span>​</span></span></span></span><span class="mclose">)</span><span class="mord mathrm">¬</span><span class="mord"><span class="mord mathit" style="margin-right: 0.08125em;">H</span><span class="msupsub"><span class="vlist"><span class="" style="top: 0.15em; margin-right: 0.05em; margin-left: -0.08125em;"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">d</span><span class="mord mathit mtight" style="margin-right: 0.05017em;">B</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span>​</span></span></span></span></span></span></span></div>
+</div></div></div>
+<div class="sl-block" data-block-type="math" data-block-id="222c6a9745eea3a2c3c4b6a77dc99369" style="width: auto; height: auto; min-width: 30px; min-height: 30px; left: 697px; top: 347px;"><div class="sl-block-content notranslate fragment current-visible" style="z-index: 24; font-size: 75%; color: rgb(0, 0, 0);" data-fragment-index="2">
+<div class="math-input">{H_{dB}}_{ij}=\begin{cases}
+0,&amp; {X_{dB}}_{ij}&lt;\lambda min(X_{dB})\\
+1,&amp; \text{otherwise}
+\end{cases}</div>
+<div class="math-output"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mrow><msub><mi>H</mi><mrow><mi>d</mi><mi>B</mi></mrow></msub></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mrow><mo fence="true">{</mo><mtable><mtr><mtd><mrow><mn>0</mn><mo separator="true">,</mo></mrow></mtd><mtd><mrow><msub><mrow><msub><mi>X</mi><mrow><mi>d</mi><mi>B</mi></mrow></msub></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>&lt;</mo><mi>λ</mi><mi>m</mi><mi>i</mi><mi>n</mi><mo>(</mo><msub><mi>X</mi><mrow><mi>d</mi><mi>B</mi></mrow></msub><mo>)</mo></mrow></mtd></mtr><mtr><mtd><mrow><mn>1</mn><mo separator="true">,</mo></mrow></mtd><mtd><mrow><mtext><mi mathvariant="normal">o</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">h</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">w</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi></mtext></mrow></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">{H_{dB}}_{ij}=\begin{cases}
+0,&amp; {X_{dB}}_{ij}&lt;\lambda min(X_{dB})\\
+1,&amp; \text{otherwise}
+\end{cases}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 1.75em;"></span><span class="strut bottom" style="height: 3.00003em; vertical-align: -1.25003em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord textstyle uncramped"><span class="mord"><span class="mord mathit" style="margin-right: 0.08125em;">H</span><span class="msupsub"><span class="vlist"><span class="" style="top: 0.15em; margin-right: 0.05em; margin-left: -0.08125em;"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">d</span><span class="mord mathit mtight" style="margin-right: 0.05017em;">B</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span>​</span></span></span></span></span><span class="msupsub"><span class="vlist"><span class="" style="top: 0.2em; margin-right: 0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">i</span><span class="mord mathit mtight" style="margin-right: 0.05724em;">j</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span>​</span></span></span></span><span class="mrel">=</span><span class="minner textstyle uncramped"><span class="mopen style-wrap reset-textstyle textstyle uncramped" style="top: 0em;"><span class="delimsizing size4">{</span></span><span class="mord"><span class="mtable"><span class="col-align-l"><span class="vlist"><span class="" style="top: -0.682em;"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span><span class="mord textstyle uncramped"><span class="mord mathrm">0</span><span class="mpunct">,</span></span></span><span class="" style="top: 0.758em;"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span><span class="mord textstyle uncramped"><span class="mord mathrm">1</span><span class="mpunct">,</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span>​</span></span></span><span class="arraycolsep" style="width: 1em;"></span><span class="col-align-l"><span class="vlist"><span class="" style="top: -0.682em;"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span><span class="mord textstyle uncramped"><span class="mord"><span class="mord textstyle uncramped"><span class="mord"><span class="mord mathit" style="margin-right: 0.07847em;">X</span><span class="msupsub"><span class="vlist"><span class="" style="top: 0.15em; margin-right: 0.05em; margin-left: -0.07847em;"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">d</span><span class="mord mathit mtight" style="margin-right: 0.05017em;">B</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span>​</span></span></span></span></span><span class="msupsub"><span class="vlist"><span class="" style="top: 0.2em; margin-right: 0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">i</span><span class="mord mathit mtight" style="margin-right: 0.05724em;">j</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span>​</span></span></span></span><span class="mrel">&lt;</span><span class="mord mathit">λ</span><span class="mord mathit">m</span><span class="mord mathit">i</span><span class="mord mathit">n</span><span class="mopen">(</span><span class="mord"><span class="mord mathit" style="margin-right: 0.07847em;">X</span><span class="msupsub"><span class="vlist"><span class="" style="top: 0.15em; margin-right: 0.05em; margin-left: -0.07847em;"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">d</span><span class="mord mathit mtight" style="margin-right: 0.05017em;">B</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span>​</span></span></span></span><span class="mclose">)</span></span></span><span class="" style="top: 0.758em;"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span><span class="mord textstyle uncramped"><span class="mord text textstyle uncramped"><span class="mord mathrm">otherwise</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span>​</span></span></span></span></span><span class="mclose sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span></span></span></span></div>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="ac42a8ae0497a690a6850421795110a1" style="min-width: 4px; min-height: 4px; width: 640px; height: 538px; left: 0px; top: 133px;"><div class="sl-block-content fragment" style="z-index: 16;" data-fragment-index="2"><img style="" data-natural-width="1025" data-natural-height="861" data-lazy-loaded="" data-src="musicoder/f6f37d248d3b6d012fdf56f4953be655.png"></div></div>
+
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 640px; height: 538px; left: 0px; top: 133px;" data-block-id="8958ad51586a1624c305cd4dd401818a"><div class="sl-block-content fragment" style="z-index: 17;" data-fragment-index="3"><img style="" data-natural-width="1025" data-natural-height="861" data-lazy-loaded="" data-src="musicoder/443c25eb9d6041a45bae397cc3661643.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 640px; height: 538px; left: 0px; top: 133px;" data-block-id="fede3b8372dfc7472f41b1108926ca49"><div class="sl-block-content" style="z-index: 11; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="scale-up"><img style="" data-natural-width="1025" data-natural-height="861" data-lazy-loaded="" data-src="musicoder/455b8f64829e65062e9620281c8b6e41.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 342px; left: 789px; top: 144px;" data-block-id="f5945c14b52b96082245d433db8eff61"><div class="sl-block-content fragment fade-out" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; border-style: dashed; border-width: 3px;" data-fragment-index="1" dir="ui">
+<pre><span style="font-size:1.6em"><strong><span style="color:#FF0000">Step 0.</span> </strong>
+短时傅里叶变换
++保留强度平面</span></pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 408px; left: 739px; top: 332px;" data-block-id="981408f34d80fbf269ba86975f7d990c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18;" dir="ui">
+<ul>
+	<li class="current-visible fragment" data-fragment-index="0" style="">
+	<pre><span style="font-size:1.6em"><strong>存在的问题：
+</strong></span><span style="font-size:42px"><span style="font-size:1.2em">音频特征稀疏</span><span style="font-size:42px"><span style="font-size:1.4em"> </span></span></span></pre>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 498px; left: 726px; top: 460px;" data-block-id="a4cee5b00b0ba67f45dd91fcacc04684"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19;" dir="ui">
+<ul>
+	<li class="current-visible fragment" data-fragment-index="0" style="">
+	<pre><span style="font-size:1.6em"><strong>解决方法：
+</strong>人类的非线性听觉
+→<strong><span style="color:rgb(0, 128, 128)">分贝(db)</span></strong></span></pre>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 418px; left: 714px; top: 331px;" data-block-id="0981ba2d32bd4e9c97987a7c52f59dd3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20;" dir="ui">
+<ul>
+	<li class="current-visible fragment" data-fragment-index="1" style="">
+	<pre><span style="font-size:1.6em"><strong>存在的问题：
+</strong></span><span style="font-size:42px"><span style="font-size:1.2em">噪声过多</span><span style="font-size:42px"><span style="font-size:1.4em"> </span></span></span></pre>
+	</li>
+</ul>
+</div></div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 441px; left: 789px; top: 144px;" data-block-id="b13d5a7a9ef8efa529e07680979b33fe"><div class="sl-block-content fragment current-visible" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 22; border-style: dashed; border-width: 3px;" data-fragment-index="2">
+<pre style="text-align:left"><span style="font-size:1.6em"><strong><span style="color:#FF0000">Step 2.</span></strong> 
+基于注意力机制滤波</span></pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 300px; left: 789px; top: 144px;" data-block-id="0c86558efd25d56d2d5e145a2f5a9850"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 26; border-style: dashed; border-width: 3px;" dir="ui" data-fragment-index="3">
+<pre style="text-align:left"><span style="font-size:1.6em"><strong><span style="color:#FF0000">Step 3.</span></strong> 
+将频谱拓展到
+RGB色彩空间</span></pre>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 640px; height: 98px; left: 0px; top: 622px;" data-block-id="5a65be4363b182053dac38a5ed753891"><div class="sl-block-content fragment current-visible" data-shape-type="circle" data-shape-fill-color="rgba(0, 0, 0, 0)" data-shape-stretch="true" style="z-index: 23;" data-shape-stroke-color="#ff0000" data-shape-stroke-width="3" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 640 98"><defs><clippath id="shape-mask-1-1527060197846"><ellipse rx="320" ry="49" cx="320" cy="49"></ellipse></clippath></defs><ellipse rx="320" ry="49" cx="320" cy="49" clip-path="url(#shape-mask-1-1527060197846)" class="shape-element" fill="rgba(0, 0, 0, 0)" stroke="#ff0000" stroke-width="6"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="20484a71628a254b3be4654a8a7733be" style="min-width: 4px; min-height: 4px; width: 181px; height: 181px; left: 228px; top: 161px;"><div class="sl-block-content fragment current-visible" style="z-index: 27;" data-fragment-index="0"><img style="" data-natural-width="96" data-natural-height="96" data-lazy-loaded="" data-src="musicoder/b67c9e61ec2a18d67ff3b90188d3605f.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 345px; height: 62px; left: 935px; top: 658px;" data-block-id="36ae791536a4e1cca99e4eb968d8e977"><div class="sl-block-content" style="z-index: 28;"><img data-natural-width="2500" data-natural-height="449" style="" data-lazy-loaded="" data-src="musicoder/65acbc148ac42301c8e204882c9591b2.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 517px; left: 763px; top: 397px;" data-block-id="374ba1e3b70b1be7274fdc02f0038033"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 29;" dir="ui" data-fragment-index="3">
+<pre class="current-visible visible"><span style="font-size:42px"><span style="font-size:1.2em">方便神经网络进行处理</span><span style="font-size:42px"><span style="font-size:1.4em"> </span></span></span></pre>
+</div></div></section></section><section class="stack" data-id="259d58aa0f7876c7f6a48935d3afbf51"><section data-id="da0e3a7475ac4d09c90b213425c1e0bb">
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-block-id="d9ca8174bfebe2b25ecf58454278a2a5" style="height: auto; min-width: 30px; min-height: 30px; width: 752px; left: 427px; top: 153px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; transition-delay: 0.6s; transition-duration: 1.5s;" dir="ui" data-animation-type="slide-left">
+<ul>
+	<li>
+	<pre style="text-align:left"><span style="font-size:1.4em">可视化过程，解释性强</span></pre>
+	</li>
+	<li>
+	<pre><span style="font-size:1.4em">仅需<strong><span style="color:rgb(255, 0, 0)">单次前向传播</span></strong>即可输出结果</span></pre>
+	</li>
+	<li>
+	<pre><span style="font-size:1.4em">计算速度快，占用资源少
+</span></pre>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="video" data-block-id="2b144dda23a80cdab1423420dfadc2ce" style="min-width: 30px; min-height: 30px; width: 353px; height: 629px; left: 80px; top: 91px;"><div class="sl-block-content" style="z-index: 11; transition-duration: 0.6s; transition-delay: 0.6s;" data-media-id="4881044" data-video-thumb="https://s3.amazonaws.com/media-p.slid.es/videos/774638/gEdJWRys/_____thumb_00001.jpg" data-animation-type="fade-in"><video playsinline="" controls="controls" data-paused-by-reveal="" poster="https://s3.amazonaws.com/media-p.slid.es/videos/774638/gEdJWRys/_____thumb_00001.jpg" data-lazy-loaded="" data-src="musicoder/62ab0b01026d8159570c83ea0dc67773.mp4"></video></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 824px; left: 228px; top: 23px;" data-block-id="0d3711731fc17a4d0f44ab93753d089a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<h1><span style="color:#008080"><strong>组件：质感转换网络</strong></span></h1>
+</div></div>
+<div class="sl-block" data-block-type="table" data-block-id="e74191a88a032029e2aeed7e4e8f8e42" style="height: auto; min-width: 120px; min-height: 30px; width: 781px; left: 443px; top: 370px;"><div class="sl-block-content" style="z-index: 13; text-align: center; transition-delay: 1.6s; transition-duration: 1s;" data-table-border-width="3px" data-animation-type="scale-up" data-table-padding="11px"><table><tbody>
+<tr>
+<th style="border-width: 3px; padding: 11px; width: 222px;"></th>
+<th style="border-width: 3px; padding: 11px; width: 273px;">单次转换耗时</th>
+<th style="border-width: 3px; padding: 11px;">内存占用峰值(8G)</th>
+</tr>
+<tr>
+<td style="border-width: 3px; padding: 11px; width: 222px;">当前最优算法*</td>
+<td style="border-width: 3px; padding: 11px; width: 273px;">664.61s                 </td>
+<td style="border-width: 3px; padding: 11px;">51.6%              </td>
+</tr>
+<tr>
+<td style="border-width: 3px; width: 222px; padding: 11px;">MusiCoder</td>
+<td style="border-width: 3px; padding: 11px; width: 273px;">30.84s                  </td>
+<td style="border-width: 3px; padding: 11px;">16.7%               </td>
+</tr>
+</tbody></table></div></div>
+
+<div class="sl-block" data-block-type="shape" data-block-id="c26794aaec3e5f786fab818f0bda6c69" style="min-width: 4px; min-height: 4px; width: 35px; height: 84px; left: 804px; top: 444px;"><div class="sl-block-content fragment fade-up" data-shape-type="arrow-up" data-shape-fill-color="rgb(74, 134, 232)" data-shape-stretch="true" style="z-index: 14;" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 35 84"><polygon points="17.5,0 35,42 24.5,42 24.5,84 10.5,84 10.5,42 0,42 17.5,0" class="shape-element" fill="rgb(74, 134, 232)"></polygon></svg></div></div>
+<div class="sl-block" data-block-type="math" data-block-id="bc02a433b814b2ba4fba1b7a5f93bbc7" style="width: auto; height: auto; min-width: 30px; min-height: 30px; left: 839px; top: 460px;"><div class="sl-block-content notranslate fragment fade-up" style="z-index: 15; color: rgb(74, 134, 232); border-width: 1px; font-size: 90%;" data-fragment-index="0">
+<div class="math-input">\times 22</div>
+<div class="math-output"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>×</mo><mn>2</mn><mn>2</mn></mrow><annotation encoding="application/x-tex">\times 22</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.64444em;"></span><span class="strut bottom" style="height: 0.72777em; vertical-align: -0.08333em;"></span><span class="base textstyle uncramped"><span class="mord">×</span><span class="mord mathrm">2</span><span class="mord mathrm">2</span></span></span></span></div>
+</div></div>
+
+<div class="sl-block" data-block-type="math" style="width: auto; height: auto; min-width: 30px; min-height: 30px; left: 1124px; top: 460px;" data-block-id="f2f7fc46a9a51be97c33aa0b2d0dc4cf"><div class="sl-block-content notranslate fragment fade-up" style="z-index: 16; color: rgb(74, 134, 232); border-width: 1px; font-size: 90%;" data-fragment-index="0">
+<div class="math-input">\times 3</div>
+<div class="math-output"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>×</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">\times 3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.64444em;"></span><span class="strut bottom" style="height: 0.72777em; vertical-align: -0.08333em;"></span><span class="base textstyle uncramped"><span class="mord">×</span><span class="mord mathrm">3</span></span></span></span></div>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 427px; left: 433px; top: 590px;" data-block-id="40f49ef1e1cd1ca8b7ed44e137617a30"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; transition-delay: 1.6s; transition-duration: 1s; border-width: 1px;" data-animation-type="scale-up">
+<p><span style="font-size:0.9em"><strong>*本演示中指</strong>Ulyanov et.al., 2017.</span></p>
+</div></div>
+
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 35px; height: 84px; left: 1084px; top: 444px;" data-block-id="073d8c65a0410d16b49c996a50d17321"><div class="sl-block-content fragment fade-up" data-shape-type="arrow-up" data-shape-fill-color="rgb(74, 134, 232)" data-shape-stretch="true" style="z-index: 19;" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 35 84"><polygon points="17.5,0 35,42 24.5,42 24.5,84 10.5,84 10.5,42 0,42 17.5,0" class="shape-element" fill="rgb(74, 134, 232)"></polygon></svg></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 345px; height: 62px; left: 935px; top: 657px;" data-block-id="940126e0e0785f34ff13bea6f60e1a6d"><div class="sl-block-content" style="z-index: 20;"><img data-natural-width="2500" data-natural-height="449" style="" data-lazy-loaded="" data-src="musicoder/65acbc148ac42301c8e204882c9591b2.png"></div></div></section><section data-id="3358b15424bba41dcd120f7cd0a182fe">
+
+
+
+
+
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 842px; top: 576px;" data-block-id="665904670c54f5a499b881fc809dc9f0"><div class="sl-block-content" data-line-x1="-25" data-line-y1="201" data-line-x2="295" data-line-y2="201" data-line-color="#000000" data-line-start-type="none" data-line-end-type="none" style="z-index: 11; transition-duration: 0.6s; transition-delay: 0.6s;" data-line-width="10px" data-animation-type="slide-right"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="320" height="1" viewbox="-25 201 320 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-25" y1="201" x2="295" y2="201"></line><line stroke="#000000" stroke-width="10" x1="-25" y1="201" x2="295" y2="201"></line></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 160px; left: 833px; top: 576px;" data-block-id="33ee1a6eb827ab8ea57c6a6f3ab56e61"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-right">
+<p><span style="font-size:0.9em"><strong>总损失比(U)</strong></span></p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 71px; height: 426px; left: 842px; top: 144px;" data-block-id="19b111c570e45c17b7fa1d0ee97f0a2d"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(221, 126, 107)" data-shape-stretch="true" style="z-index: 13; transition-duration: 0.6s; transition-delay: 0.4s;" data-animation-type="slide-up"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 71 426"><rect width="71" height="426" class="shape-element" fill="rgb(221, 126, 107)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 72px; height: 66px; left: 913px; top: 504px;" data-block-id="01f1fb66216b517ab198d8c9e8c3ae14"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(106, 168, 79)" data-shape-stretch="true" style="z-index: 14; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-up"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 72 66"><rect width="72" height="66" class="shape-element" fill="rgb(106, 168, 79)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 72px; height: 66px; left: 1089px; top: 504px;" data-block-id="73d002deb68e794bd242156be8725c7f"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(106, 168, 79)" data-shape-stretch="true" style="z-index: 15; transition-duration: 0.6s; transition-delay: 1s;" data-animation-type="slide-up"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 73 66"><rect width="73" height="66" class="shape-element" fill="rgb(106, 168, 79)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 71px; height: 210px; left: 1018px; top: 360px;" data-block-id="4b4c6c0a0c72c46c99410a9e83ed5e09"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(221, 126, 107)" data-shape-stretch="true" style="z-index: 16; transition-duration: 0.6s; transition-delay: 0.8s;" data-animation-type="slide-up"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 71 210"><rect width="71" height="210" class="shape-element" fill="rgb(221, 126, 107)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 165px; left: 1007px; top: 576px;" data-block-id="9a67e4724a64172287f8f903621779d2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-right">
+<p><span style="font-size:0.9em"><strong>总损失比(M)</strong></span></p>
+</div></div>
+
+<div class="sl-block" data-block-type="image" style="width: 257px; height: 216px; left: 86px; top: 145px; min-width: 4px; min-height: 4px;" data-block-id="9972d1f43cc5d57803d360b44b97f4bf"><div class="sl-block-content" style="z-index: 18; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="fade-in"><img style="" data-natural-width="1025" data-natural-height="861" data-lazy-loaded="" data-src="musicoder/c5d74c46549bc3ebd75c4bcd06c35856.png"></div></div>
+<div class="sl-block" data-block-type="image" style="width: 258px; height: 217px; left: 495px; top: 145px; min-width: 4px; min-height: 4px;" data-block-id="f7956b5525d4f0b20df9cc70953a4445"><div class="sl-block-content" style="z-index: 19; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="fade-in"><img style="" data-natural-width="1025" data-natural-height="861" data-lazy-loaded="" data-src="musicoder/c1767e0df8fa9d7dd1d84a777c99acbf.png"></div></div>
+<div class="sl-block" data-block-type="image" style="width: 258px; height: 217px; left: 495px; top: 427px; min-width: 4px; min-height: 4px;" data-block-id="5a938b5d797342f822a9aa543e9356d9"><div class="sl-block-style" style="z-index: 20;"><div class="sl-block-content" style="z-index: 20; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="fade-in"><img style="" data-natural-width="1025" data-natural-height="861" data-lazy-loaded="" data-src="musicoder/c9636c9fa8a7763d0a637b2fa2d1f614.png"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 258px; height: 217px; left: 86px; top: 433px; min-width: 4px; min-height: 4px;" data-block-id="49843b33ae07710fd7194c8e80275f5f"><div class="sl-block-content" style="z-index: 21; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="fade-in"><img style="" data-natural-width="1025" data-natural-height="861" data-lazy-loaded="" data-src="musicoder/ac93a2aa12f779970a7a0e9706e16d39.png"></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 65px; height: 27px; left: 949px; top: 196px;" data-block-id="1d8a6f2026eb41be8d6a869d54e77222"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(221, 126, 107)" data-shape-stretch="true" style="z-index: 22; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-left"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 65 27"><rect width="65" height="27" class="shape-element" fill="rgb(221, 126, 107)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 172px; left: 1028px; top: 190px;" data-block-id="8295ba400ad2f7504799f5f9e5210e59"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 23; transition-duration: 0.6s; transition-delay: 0.6s; text-align: left;" data-animation-type="slide-right">
+<p><span style="font-size:0.9em"><strong>当前最优算法</strong></span></p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 65px; height: 27px; left: 949px; top: 256px;" data-block-id="34d6d7763a590dc7196074efd06234cb"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(106, 168, 79)" data-shape-stretch="true" style="z-index: 24; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-left"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 65 27"><rect width="65" height="27" class="shape-element" fill="rgb(106, 168, 79)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 161px; left: 1028px; top: 250px;" data-block-id="0cbf37b711ed192bef633f26942141be"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 25; transition-duration: 0.6s; transition-delay: 0.6s; text-align: left;" data-animation-type="slide-right">
+<p><span style="font-size:0.9em"><strong>MusiCoder</strong></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 253px; left: 89px; top: 361px;" data-block-id="d7fb14e4524501003e3395f45403425b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 26; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-right">
+<p>粉噪声(内容)频谱</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 253px; left: 498px; top: 362px;" data-block-id="7ee66bdc5be453e2854118839bb4effb"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 27; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-right">
+<p>水流声(质感)频谱</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 259px; left: 85px; top: 660px;" data-block-id="486a6f7324377a335a4ce51a2e1ec5d8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 28; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-right">
+<p><span style="color:#008080"><strong>当前最优算法</strong></span>频谱</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 240px; left: 504px; top: 660px;" data-block-id="f9f5564c66c5b2f55092b27afc4fc7a7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 29; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-right">
+<p><span style="color:#008080"><strong>MusiCoder</strong></span>频谱</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" data-block-id="106398c63fbb074dea518fbabcece62d" style="min-width: 4px; min-height: 4px; width: 285px; height: 237px; left: 482px; top: 417px;"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgba(0, 0, 0, 0)" data-shape-stretch="true" style="z-index: 32;" data-shape-stroke-color="#00ff00" data-shape-stroke-width="14" data-fragment-index="1"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 285 237"><defs><clippath id="shape-mask-2-1527060200594"><rect width="285" height="237"></rect></clippath></defs><rect width="285" height="237" clip-path="url(#shape-mask-2-1527060200594)" class="shape-element" fill="rgba(0, 0, 0, 0)" stroke="#00ff00" stroke-width="28"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 824px; left: 228px; top: 23px;" data-block-id="a4fb2f32eabe84f02e17fdaf2d3f11dd"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 30; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<h1><span style="color:#008080"><strong>组件：质感转换网络</strong></span></h1>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 285px; height: 237px; left: 72px; top: 423px;" data-block-id="f29fab55771160b8e9b95ef1e529edb6"><div class="sl-block-content fragment current-visible" data-shape-type="rect" data-shape-fill-color="rgba(0, 0, 0, 0)" data-shape-stretch="true" style="z-index: 31;" data-shape-stroke-color="#ff0000" data-shape-stroke-width="14" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 285 237"><defs><clippath id="shape-mask-3-1527060200603"><rect width="285" height="237"></rect></clippath></defs><rect width="285" height="237" clip-path="url(#shape-mask-3-1527060200603)" class="shape-element" fill="rgba(0, 0, 0, 0)" stroke="#ff0000" stroke-width="28"></rect></svg></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 345px; height: 62px; left: 935px; top: 658px;" data-block-id="476557d24e2f073ae7c4eb6dcdb10a2d"><div class="sl-block-content" style="z-index: 33;"><img data-natural-width="2500" data-natural-height="449" style="" data-lazy-loaded="" data-src="musicoder/65acbc148ac42301c8e204882c9591b2.png"></div></div>
+<div class="sl-block" data-block-type="shape" data-block-id="10263ded04f2493dcde1d245060f9db3" style="min-width: 4px; min-height: 4px; width: 53px; height: 105px; left: 189px; top: 400px;"><div class="sl-block-content fragment current-visible" data-shape-type="triangle-down" data-shape-fill-color="rgb(255, 0, 0)" data-shape-stretch="true" style="z-index: 34;" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 53 105"><polygon points="0,0 53,0 26.5,105" class="shape-element" fill="rgb(255, 0, 0)"></polygon></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 53px; height: 379px; left: 347px; top: 198px;" data-block-id="fb7d60980183369740a0ec360c2f6163"><div class="sl-block-style" style="z-index: 37; transform: rotate(55deg);"><div class="sl-block-content fragment current-visible" data-shape-type="triangle-down" data-shape-fill-color="rgb(255, 0, 0)" data-shape-stretch="true" style="z-index: 37;" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 53 379"><polygon points="0,0 53,0 26.5,379" class="shape-element" fill="rgb(255, 0, 0)"></polygon></svg></div></div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 53px; height: 391px; left: 438px; top: 195px;" data-block-id="f4c581668f0764155aa336a343479beb"><div class="sl-block-style" style="z-index: 35; transform: rotate(305deg);"><div class="sl-block-content fragment fade-right" data-shape-type="triangle-down" data-shape-fill-color="rgb(0, 255, 0)" data-shape-stretch="true" style="z-index: 35;" data-fragment-index="1"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 53 391"><polygon points="0,0 53,0 26.5,391" class="shape-element" fill="rgb(0, 255, 0)"></polygon></svg></div></div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 53px; height: 105px; left: 604px; top: 400px;" data-block-id="c2bcfa72a58d5ff44f93a624820a4ad7"><div class="sl-block-content fragment fade-down" data-shape-type="triangle-down" data-shape-fill-color="rgb(0, 255, 0)" data-shape-stretch="true" style="z-index: 36;" data-fragment-index="1"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 53 105"><polygon points="0,0 53,0 26.5,105" class="shape-element" fill="rgb(0, 255, 0)"></polygon></svg></div></div></section><section data-id="27c92c21f7a764cf5373732bac38bf79">
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 824px; left: 228px; top: 23px;" data-block-id="3998b548a6d85fc301803fc75eec0222"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<h1><span style="color:#008080"><strong>组件：质感转换网络</strong></span></h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 514px; left: 383px; top: 648px;" data-block-id="898d21689654ac0fc38a297bdf43b590"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; transition-delay: 0.6s; transition-duration: 1.5s;" dir="ui" data-animation-type="slide-left">
+<pre style="text-align:center"><span style="font-size:1.4em">基于<em>FMA</em>构建海量训练集
+</span></pre>
+</div></div>
+
+
+<div class="sl-block" data-block-type="image" data-block-id="33a321eaaae320bcea7ace027608f536" style="min-width: 4px; min-height: 4px; width: 246px; height: 106px; left: 914px; top: 110px;"><div class="sl-block-content" style="z-index: 13; transition-delay: 0.6s; transition-duration: 1.5s;" data-animation-type="slide-right"><img data-natural-width="218" data-natural-height="94" style="" data-lazy-loaded="" data-src="musicoder/ababace6f00ca73a049146451be4687b.png"></div></div>
+<div class="sl-block" data-block-type="video" data-block-id="94dd37ad3e7505b9eee66bc44d9c7e11" style="min-width: 30px; min-height: 30px; width: 1040px; height: 538px; left: 120px; top: 110px;"><div class="sl-block-content" style="z-index: 12; transition-duration: 0.6s; transition-delay: 0.6s;" data-media-id="4926376" data-video-thumb="https://s3.amazonaws.com/media-p.slid.es/videos/774638/234VbgwU/dataset_thumb_00001.jpg" data-animation-type="fade-in"><video playsinline="" controls="controls" poster="https://s3.amazonaws.com/media-p.slid.es/videos/774638/234VbgwU/dataset_thumb_00001.jpg" data-paused-by-reveal="" data-lazy-loaded="" data-src="musicoder/7b57102b8ad744d75ef3239d754075fb.mp4"></video></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 345px; height: 62px; left: 935px; top: 658px;" data-block-id="39aa989e35aa9a73decb44aa55696668"><div class="sl-block-content" style="z-index: 15;"><img data-natural-width="2500" data-natural-height="449" style="" data-lazy-loaded="" data-src="musicoder/65acbc148ac42301c8e204882c9591b2.png"></div></div></section></section><section class="stack" data-id="7ad6881f2e2f661b77b9f80d2ae8625c"><section data-id="fa9fc6998ec033e7217508de6512232c">
+<div class="sl-block" data-block-type="text" style="height: auto; width: 824px; left: 228px; top: 23px;" data-block-id="6c0e78ca4a5a15766b60040a8b9650c5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<h1><span style="color:#008080"><strong>组件：频谱-音频编码器</strong></span></h1>
+</div></div>
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 650px; left: 315px; top: 658px;" data-block-id="ad72e75a0889cf1d974a30db13e80014"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="fade-in">
+<p><span style="font-size:36px">连续差分-快速重采样算法</span></p>
+</div></div>
+
+<div class="sl-block" data-block-type="video" data-block-id="71121443e149d8d38cdc0a7435731587" style="min-width: 30px; min-height: 30px; width: 621px; height: 525px; left: 0px; top: 121px;"><div class="sl-block-content" style="z-index: 12; transition-duration: 0.6s; transition-delay: 0.6s;" data-media-id="4928825" data-video-thumb="https://s3.amazonaws.com/media-p.slid.es/videos/774638/1dyu4wOA/output_thumb_00001.jpg" data-animation-type="fade-in"><video playsinline="" controls="controls" poster="https://s3.amazonaws.com/media-p.slid.es/videos/774638/1dyu4wOA/output_thumb_00001.jpg" data-paused-by-reveal="" data-lazy-loaded="" data-src="musicoder/6a68ea0a4cc6277b73d331c0e1e1c6fe.mp4"></video></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 345px; height: 62px; left: 935px; top: 658px;" data-block-id="02ad9e68e1e18ddf25b3d09e8b0a8e27"><div class="sl-block-content" style="z-index: 14;"><img data-natural-width="2500" data-natural-height="449" style="" data-lazy-loaded="" data-src="musicoder/65acbc148ac42301c8e204882c9591b2.png"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="4d93f6271a26fdda3870174d6affa2fa" style="min-width: 4px; min-height: 4px; width: 638px; height: 517px; left: 641px; top: 121px;"><div class="sl-block-content" style="z-index: 15; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="fade-in"><img style="" data-natural-width="795" data-natural-height="644" data-lazy-loaded="" data-src="musicoder/2afa1e4e1d0f57622eb9ef2e652a46c9.png"></div></div></section><section data-id="5912d5433f643ea5b495c091d980ba76">
+<div class="sl-block" data-block-type="text" style="height: auto; width: 824px; left: 228px; top: 23px;" data-block-id="5c1fbff1a49132859994fdd33d5b4777"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<h1><span style="color:#008080"><strong>组件：频谱-音频编码器</strong></span></h1>
+</div></div>
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 650px; left: 315px; top: 658px;" data-block-id="6de28aac9eaf9d043a57c0f0e18aabde"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="fade-in">
+<p><span style="font-size:36px">并行化重建音频</span></p>
+</div></div>
+<div class="sl-block" data-block-type="video" data-block-id="1fbd7e61ec8b0f9d1e819adcc9b2c12f" style="min-width: 30px; min-height: 30px; width: 955px; height: 537px; left: 163px; top: 121px;"><div class="sl-block-content" style="z-index: 11; transition-duration: 0.6s; transition-delay: 0.6s;" data-media-id="4881016" data-video-thumb="https://s3.amazonaws.com/media-p.slid.es/videos/774638/c23cwbcs/gla_thumb_00001.jpg" data-animation-type="fade-in"><video playsinline="" controls="controls" data-paused-by-reveal="" poster="https://s3.amazonaws.com/media-p.slid.es/videos/774638/c23cwbcs/gla_thumb_00001.jpg" data-lazy-loaded="" data-src="musicoder/6899ba1a8f0a08e3fcac4dd276b420ab.mp4"></video></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 345px; height: 62px; left: 935px; top: 658px;" data-block-id="2664e5229ced1db4107ca05b90b70760"><div class="sl-block-content" style="z-index: 14;"><img data-natural-width="2500" data-natural-height="449" style="" data-lazy-loaded="" data-src="musicoder/65acbc148ac42301c8e204882c9591b2.png"></div></div></section><section data-id="7a1f3641050f6e9c0c119e0d1c36c891">
+<div class="sl-block" data-block-type="text" style="height: auto; width: 824px; left: 228px; top: 23px;" data-block-id="e8dda32f31ecffe39fb9080b85062a08"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<h1><span style="color:#008080"><strong>算法总体架构</strong></span></h1>
+</div></div>
+
+
+
+
+<div class="sl-block" data-block-type="image" data-block-id="680d08870bf038ec0c7d802346b7cb16" style="min-width: 4px; min-height: 4px; width: 873px; height: 540px; left: 202px; top: 121px;"><div class="sl-block-content" style="z-index: 11; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="fade-in"><img data-natural-width="1608" data-natural-height="995" style="" data-lazy-loaded="" data-src="musicoder/a1e0c5ce5eecca97602828068283cd3a.jpg"></div></div>
+<div class="sl-block" data-block-type="shape" data-block-id="279845bffe9c7d46ff1d6d237be50dae" style="min-width: 4px; min-height: 4px; width: 242px; height: 62px; left: 537px; top: 232px;"><div class="sl-block-content fragment" data-shape-type="circle" data-shape-fill-color="rgba(0, 0, 0, 0)" data-shape-stretch="true" style="z-index: 12;" data-shape-stroke-color="#ff0000" data-shape-stroke-width="5" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 242 62"><defs><clippath id="shape-mask-4-1527060207127"><ellipse rx="121" ry="31" cx="121" cy="31"></ellipse></clippath></defs><ellipse rx="121" ry="31" cx="121" cy="31" clip-path="url(#shape-mask-4-1527060207127)" class="shape-element" fill="rgba(0, 0, 0, 0)" stroke="#ff0000" stroke-width="10"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="shape" data-block-id="3965e3dfb382aefc3986ff358f961c55" style="min-width: 4px; min-height: 4px; width: 352px; height: 28px; left: 185px; top: 249px;"><div class="sl-block-style" style="z-index: 13;"><div class="sl-block-content fragment fade-left" data-shape-type="arrow-left" data-shape-fill-color="rgb(255, 0, 0)" data-shape-stretch="true" style="z-index: 13;" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 352 28"><polygon points="352,8.4 176,8.4 176,0 0,14 176,28 176,19.599999999999998 352,19.599999999999998 352,8.4" class="shape-element" fill="rgb(255, 0, 0)"></polygon></svg></div></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="73a49587ca95be5bd468db458e4dd807" style="height: auto; min-width: 30px; min-height: 30px; width: 154px; left: 31px; top: 224px;"><div class="sl-block-content fragment fade-left" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; border-style: solid; border-width: 3px; border-color: rgb(255, 0, 0); background-color: rgb(255, 255, 255);" data-fragment-index="0">
+<pre style="text-align: center;"><span style="color:#FF0000"><strong>有效的
+表示方法</strong></span></pre>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 185px; height: 62px; left: 834px; top: 313px;" data-block-id="fef21e66d8fbe25e157f4cf729e3e46e"><div class="sl-block-content fragment" data-shape-type="circle" data-shape-fill-color="rgba(0, 0, 0, 0)" data-shape-stretch="true" style="z-index: 15;" data-shape-stroke-color="#ff0000" data-shape-stroke-width="5" data-fragment-index="1"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 185 62"><defs><clippath id="shape-mask-5-1527060207140"><ellipse rx="92.5" ry="31" cx="92.5" cy="31"></ellipse></clippath></defs><ellipse rx="92.5" ry="31" cx="92.5" cy="31" clip-path="url(#shape-mask-5-1527060207140)" class="shape-element" fill="rgba(0, 0, 0, 0)" stroke="#ff0000" stroke-width="10"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 84px; height: 28px; left: 1019px; top: 330px;" data-block-id="740e81d71733cf8bef39e7581edbc9b7"><div class="sl-block-style" style="z-index: 16; transform: rotate(180deg);"><div class="sl-block-content fragment fade-left" data-shape-type="arrow-left" data-shape-fill-color="rgb(255, 0, 0)" data-shape-stretch="true" style="z-index: 16;" data-fragment-index="1"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 84 28"><polygon points="84,8.4 42,8.4 42,0 0,14 42,28 42,19.599999999999998 84,19.599999999999998 84,8.4" class="shape-element" fill="rgb(255, 0, 0)"></polygon></svg></div></div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 242px; height: 62px; left: 531px; top: 604px;" data-block-id="99ab0407f3d882088a89a18acc874180"><div class="sl-block-content fragment" data-shape-type="circle" data-shape-fill-color="rgba(0, 0, 0, 0)" data-shape-stretch="true" style="z-index: 17;" data-shape-stroke-color="#ff0000" data-shape-stroke-width="5" data-fragment-index="2"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 242 63"><defs><clippath id="shape-mask-6-1527060207147"><ellipse rx="121" ry="31.5" cx="121" cy="31.5"></ellipse></clippath></defs><ellipse rx="121" ry="31.5" cx="121" cy="31.5" clip-path="url(#shape-mask-6-1527060207147)" class="shape-element" fill="rgba(0, 0, 0, 0)" stroke="#ff0000" stroke-width="10"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 154px; left: 31px; top: 597px;" data-block-id="88d4ade1f31b51235b5e8941cc044e67"><div class="sl-block-content fragment fade-left" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; border-style: solid; border-width: 3px; border-color: rgb(255, 0, 0); background-color: rgb(255, 255, 255);" data-fragment-index="2">
+<pre style="text-align:center"><span style="color:#FF0000"><strong>高速的
+重建算法</strong></span></pre>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 344px; height: 28px; left: 187px; top: 622px;" data-block-id="fc035b6c18af42394b223a8d43a279af"><div class="sl-block-style" style="z-index: 20; transform: rotate(180deg);"><div class="sl-block-content fragment fade-right" data-shape-type="arrow-right" data-shape-fill-color="rgb(255, 0, 0)" data-shape-stretch="true" style="z-index: 20;" data-fragment-index="2"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 344 28"><polygon points="0,8.4 172,8.4 172,0 344,14 172,28 172,19.599999999999998 0,19.599999999999998" class="shape-element" fill="rgb(255, 0, 0)"></polygon></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 154px; left: 1097px; top: 305px;" data-block-id="8e757ac6d577605fc25276168966bcdc"><div class="sl-block-content fragment fade-right" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 21; border-style: solid; border-width: 3px; border-color: rgb(255, 0, 0); background-color: rgb(255, 255, 255);" data-fragment-index="1">
+<pre style="text-align:center"><span style="color:#FF0000"><strong>可行的
+转换方案</strong></span></pre>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 345px; height: 62px; left: 935px; top: 658px;" data-block-id="903ce11bfd4b05b3f97a62f6c0349f49"><div class="sl-block-content" style="z-index: 22;"><img data-natural-width="2500" data-natural-height="449" style="" data-lazy-loaded="" data-src="musicoder/65acbc148ac42301c8e204882c9591b2.png"></div></div></section></section><section class="stack" data-id="1c1ec0749b39be0c8d3768710cf40429"><section data-id="d501163e2a00a30c3d705b912f1cb61a">
+<div class="sl-block" data-block-type="text" style="height: auto; width: 847px; left: 217px; top: 23px;" data-block-id="5d9609d4da7a30b4fb5c991cfac1c9ca"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<h1><font color="#008080"><strong>我们的优势</strong></font></h1>
+</div></div>
+
+
+
+
+<div class="sl-block" data-block-type="table" data-block-id="72b9aa59ea961596a7d0e6950ab3a8b7" style="height: auto; min-width: 120px; min-height: 30px; width: 1037px; left: 122px; top: 137px;"><div class="sl-block-content" style="z-index: 11; text-align: center; transition-duration: 0.6s; transition-delay: 0.6s;" data-table-cols="3" data-table-rows="6" data-table-padding="20px" data-table-border-width="2px" data-animation-type="scale-up"><table><tbody>
+<tr>
+<th style="padding: 20px; width: 325px; border-width: 2px;"></th>
+<th style="padding: 20px; border-width: 2px; width: 327px;">MusiCoder</th>
+<th style="padding: 20px; border-width: 2px;">Adobe® Audiotion</th>
+</tr>
+<tr>
+<td style="padding: 20px; width: 325px; border-width: 2px;"><strong>安装后大小</strong></td>
+<td style="padding: 20px; border-width: 2px; width: 327px;">≈80M</td>
+<td style="padding: 20px; border-width: 2px;">≈2G</td>
+</tr>
+<tr>
+<td style="padding: 20px; width: 325px; border-width: 2px;"><strong>转换耗时(10秒曲目)</strong></td>
+<td style="padding: 20px; border-width: 2px; width: 327px;">≈30秒</td>
+<td style="padding: 20px; border-width: 2px;">≈2分钟（仅渲染时间）</td>
+</tr>
+<tr>
+<td style="padding: 20px; width: 325px; border-width: 2px;"><strong>核心算法类型</strong></td>
+<td style="padding: 20px; border-width: 2px; width: 327px;">基于统计的深度学习</td>
+<td style="padding: 20px; border-width: 2px;">基于规则的信号滤波</td>
+</tr>
+<tr>
+<td style="padding: 20px; width: 325px; border-width: 2px;"><strong>支持全局转换</strong></td>
+<td style="padding: 20px; border-width: 2px; width: 327px;"></td>
+<td style="padding: 20px; border-width: 2px;"></td>
+</tr>
+<tr>
+<td style="padding: 20px; width: 325px; border-width: 2px;"><strong>支持“傻瓜式”操作</strong></td>
+<td style="padding: 20px; border-width: 2px; width: 327px;"></td>
+<td style="padding: 20px; border-width: 2px;"></td>
+</tr>
+</tbody></table></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="1ff99b5a308a79740cdfa5f34aa596dd" style="height: auto; min-width: 30px; min-height: 30px; width: 324px; left: 449px; top: 468px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; transition-duration: 0.6s; transition-delay: 0.6s;" dir="ui" data-animation-type="scale-up">
+<pre style="text-align:center"><strong><span style="font-size:2.0em"><span style="color:#008000">√</span></span></strong></pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 324px; left: 449px; top: 551px;" data-block-id="fca94782fdd39c643f41b30d34233649"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; transition-duration: 0.6s; transition-delay: 0.6s;" dir="ui" data-animation-type="scale-up">
+<pre style="text-align:center"><strong><span style="font-size:2.0em"><span style="color:#008000">√</span></span></strong></pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 324px; left: 796px; top: 450px;" data-block-id="c25aa737486b5b1bf982b1ece8d8ca28"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; transition-duration: 0.6s; transition-delay: 0.6s;" dir="ui" data-animation-type="scale-up">
+<pre style="text-align:center"><span style="font-size:2.5em"><span style="color:#FF0000"><strong>×</strong></span></span></pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 323px; left: 797px; top: 533px;" data-block-id="aa8fbbf2ddba2c9641a9391af46ae6fc"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; transition-duration: 0.6s; transition-delay: 0.6s;" dir="ui" data-animation-type="scale-up">
+<pre style="text-align:center"><span style="font-size:2.5em"><span style="color:#FF0000"><strong>×</strong></span></span></pre>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 45px; height: 65px; left: 758px; top: 222px;" data-block-id="123e48c43265a82f41047d14b84e40bd"><div class="sl-block-style" style="z-index: 16; transform: rotate(90deg);"><div class="sl-block-content fragment fade-up" data-shape-type="arrow-up" data-shape-fill-color="rgb(74, 134, 232)" data-shape-stretch="true" style="z-index: 16;" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 45 65"><polygon points="22.5,0 45,32.5 31.499999999999996,32.5 31.499999999999996,65 13.5,65 13.5,32.5 0,32.5 22.5,0" class="shape-element" fill="rgb(74, 134, 232)"></polygon></svg></div></div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 45px; height: 65px; left: 758px; top: 309px;" data-block-id="5a83bbbd8a841df05e0b720257b58037"><div class="sl-block-style" style="z-index: 17; transform: rotate(90deg);"><div class="sl-block-content fragment fade-up" data-shape-type="arrow-up" data-shape-fill-color="rgb(74, 134, 232)" data-shape-stretch="true" style="z-index: 17;" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 45 65"><polygon points="22.5,0 45,32.5 31.499999999999996,32.5 31.499999999999996,65 13.5,65 13.5,32.5 0,32.5 22.5,0" class="shape-element" fill="rgb(74, 134, 232)"></polygon></svg></div></div></div>
+<div class="sl-block" data-block-type="math" style="width: auto; height: auto; min-width: 30px; min-height: 30px; left: 665px; top: 307px;" data-block-id="8821bbd6a022e11479fd5db20a3d1d27"><div class="sl-block-content notranslate fragment fade-right" style="z-index: 18; color: rgb(74, 134, 232); border-width: 1px;" data-fragment-index="0">
+<div class="math-input">\times 4</div>
+<div class="math-output"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>×</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">\times 4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.64444em;"></span><span class="strut bottom" style="height: 0.72777em; vertical-align: -0.08333em;"></span><span class="base textstyle uncramped"><span class="mord">×</span><span class="mord mathrm">4</span></span></span></span></div>
+</div></div>
+<div class="sl-block" data-block-type="math" style="width: auto; height: auto; min-width: 30px; min-height: 30px; left: 652px; top: 220px;" data-block-id="c42f81848fabe01310c9d2ac219402be"><div class="sl-block-content notranslate fragment fade-right" style="z-index: 20; color: rgb(74, 134, 232); border-width: 1px;" data-fragment-index="0">
+<div class="math-input">\times 25</div>
+<div class="math-output"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>×</mo><mn>2</mn><mn>5</mn></mrow><annotation encoding="application/x-tex">\times 25</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.64444em;"></span><span class="strut bottom" style="height: 0.72777em; vertical-align: -0.08333em;"></span><span class="base textstyle uncramped"><span class="mord">×</span><span class="mord mathrm">2</span><span class="mord mathrm">5</span></span></span></span></div>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 345px; height: 62px; left: 935px; top: 658px;" data-block-id="ec001c2b6b4a85d4b9051f36ad250553"><div class="sl-block-content" style="z-index: 21;"><img data-natural-width="2500" data-natural-height="449" style="" data-lazy-loaded="" data-src="musicoder/65acbc148ac42301c8e204882c9591b2.png"></div></div></section><section data-id="04c05520003ec1c02557d5fa294f5ae2">
+<div class="sl-block" data-block-type="text" style="height: auto; width: 716px; left: 282px; top: 23px;" data-block-id="39000b2012d21f87f0b10ea3c63c3525"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<h1><span style="color:#008080"><strong>市场前景</strong></span></h1>
+</div></div>
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 408px; left: 134px; top: 108px;" data-block-id="e5f4246751b2d043b7e2fd56b1fe1fcb"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-left">
+<ul>
+	<li>
+	<pre><span style="font-size:1.6em"><strong>消费级娱乐市场</strong></span></pre>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 1072px; left: 134px; top: 177px;" data-block-id="b1d1146dbe62258949cd770af29c3bed"><div class="sl-block-style" style="z-index: 12;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; transition-delay: 0.6s; transition-duration: 0.8s;" data-animation-type="slide-left">
+<pre style="text-align:left"><span style="font-size:1.2em"><span style="text-align:justify"><strong><span style="color:#008080">普通用户</span></strong>也可以自主完成复杂的混音操作，像使用照片滤镜一样，自由地变换音乐质感；</span></span></pre>
+
+<p style="text-align:left"><span style="font-size:1.2em"><span style="text-align:justify">（参照：Prisma-ai                                  ）</span></span></p>
+</div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 306px; left: 134px; top: 345px;" data-block-id="6f48242c1636c460038f52534c87e08a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; transition-delay: 0.6s; transition-duration: 1s;" data-animation-type="slide-left">
+<ul>
+	<li>
+	<pre><span style="font-size:1.6em"><strong>专业级市场</strong></span></pre>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 1048px; left: 134px; top: 418px;" data-block-id="c81b21af5d4365ae2ea742f26b53d52d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; transition-delay: 0.6s; transition-duration: 1.2s;" data-animation-type="slide-left">
+<pre><span style="font-size:1.2em"><span style="text-align:justify"><strong><span style="color:#008080">创作者</span></strong></span></span><span style="font-size:1.2em"><span style="text-align:justify">可以</span></span><span style="font-size:1.2em"><span style="text-align:justify">敏捷地实现创意，获得其它软件不能生成的音效，从而扩展灵感；</span></span></pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 356px; left: 134px; top: 523px;" data-block-id="bd52ca6e2c120adf59f5b791259fac83"><div class="sl-block-style" style="z-index: 15;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; transition-delay: 0.6s; transition-duration: 1.4s;" data-animation-type="slide-left">
+<ul>
+	<li>
+	<pre style="font-size: 48px;"><strong>学术研究领域</strong></pre>
+	</li>
+</ul>
+</div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 933px; left: 134px; top: 605px;" data-block-id="be1a6a83007f2d96d6032d29b35d0cce"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; transition-delay: 0.6s; transition-duration: 1.6s;" data-animation-type="slide-left">
+<pre><span style="font-size:1.2em"><span style="text-align:justify"><strong><span style="color:#008080">研究者</span></strong></span></span><span style="font-size:1.2em"><span style="text-align:justify">可以利用我们的API，进行音乐质感合成与可视化。</span></span></pre>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 274px; height: 51px; left: 447px; top: 266px; min-width: 4px; min-height: 4px;" data-block-id="c63933bb0440d424f682f310855aee5e"><div class="sl-block-content" style="z-index: 17; transition-delay: 0.6s; transition-duration: 0.8s;" data-animation-type="slide-left"><img style="" data-natural-width="800" data-natural-height="149" data-lazy-loaded="" data-src="musicoder/5c12398a9dcb990ed2629042255564da.svg"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 345px; height: 62px; left: 935px; top: 658px;" data-block-id="cfe2bcb1a390946c46fbb8313066ab81"><div class="sl-block-content" style="z-index: 19;"><img data-natural-width="2500" data-natural-height="449" style="" data-lazy-loaded="" data-src="musicoder/65acbc148ac42301c8e204882c9591b2.png"></div></div></section><section data-id="adaee46c5a06633a02206539322cf446">
+<div class="sl-block" data-block-type="text" style="height: auto; width: 667px; left: 307px; top: 23px;" data-block-id="1e6be526352c6546cc3500b06d5eedeb"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<h1><span style="color:#008080"><strong>项目成果</strong></span></h1>
+</div></div>
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="image" style="width: 265px; height: 106px; left: 908px; top: 245px; min-width: 4px; min-height: 4px;" data-block-id="4b0fe5e623e9b07416479de47dd939a9"><div class="sl-block-content" style="z-index: 11; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-left"><img data-natural-width="1000" data-natural-height="400" style="" data-lazy-loaded="" data-src="musicoder/71703ef293653b57d88b8360aed68ff4.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 964px; left: 19px; top: 106px;" data-block-id="32a1daa737b1557d0dc1c470fd915a79"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-right">
+<ul>
+	<li>
+	<pre style="font-size:48px"><span style="font-size:1.0em"><strong>首款实现产品化的音乐质感转换系统
+</strong><em>(已取得软件著作权一项)</em></span></pre>
+	</li>
+	<li>
+	<pre><span style="font-size:1.4em"><strong>核心算法：高水平论文</strong>(ISMIR在投)</span></pre>
+	</li>
+	<li>
+	<pre><span style="font-size:1.4em"><strong>开源项目</strong></span></pre>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 147px; height: 121px; left: 967px; top: 112px; min-width: 4px; min-height: 4px;" data-block-id="49d0723186376e4344c7407a02c396f9"><div class="sl-block-content" style="z-index: 13; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-left"><img style="" data-natural-width="97" data-natural-height="80" data-lazy-loaded="" data-src="musicoder/a3d09df7a806d833588422e9beefff0c.png"></div></div>
+<div class="sl-block" data-block-type="image" style="width: 267px; height: 267px; left: 187px; top: 352px; min-width: 4px; min-height: 4px;" data-block-id="0e8071fa5d18e0edf02561cb81c828ca"><div class="sl-block-content" style="z-index: 14; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="scale-down"><img data-natural-width="1000" data-natural-height="1000" style="" data-lazy-loaded="" data-src="musicoder/87e45a93ff2f26fe3ee78b70b4060e3a.png"></div></div>
+<div class="sl-block" data-block-type="image" style="width: 267px; height: 267px; left: 507px; top: 352px; min-width: 4px; min-height: 4px;" data-block-id="d4fc0017613e2040279a7ea3c7a9610c"><div class="sl-block-content" style="z-index: 15; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="scale-down"><img data-natural-width="1000" data-natural-height="1000" style="" data-lazy-loaded="" data-src="musicoder/e5a312f373cc4b7d2b20e550f2b0ad02.png"></div></div>
+<div class="sl-block" data-block-type="image" style="width: 268px; height: 268px; left: 826px; top: 351px; min-width: 4px; min-height: 4px;" data-block-id="c6e7337f7143e4253680cc233abf112f"><div class="sl-block-content" style="z-index: 16; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="scale-down"><img data-natural-width="1000" data-natural-height="1000" style="" data-lazy-loaded="" data-src="musicoder/74e99476141c75ae69c1926d04e6096e.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 155px; left: 243px; top: 619px;" data-block-id="08c3ed5e0abd02ecb24958622bc94f50"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="scale-down">
+<p><span style="color:#008080"><strong>项目页面</strong></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 155px; left: 883px; top: 619px;" data-block-id="8f290ce35ef8472429f3e1edc33ebe0e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="scale-down">
+<p><font color="#008080"><strong>介绍视频</strong></font></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 155px; left: 563px; top: 619px;" data-block-id="af38f475f9a4b59beb2e8992f7e32ff8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="scale-down">
+<p><span style="color:#008080"><strong>下载镜像</strong></span></p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 345px; height: 62px; left: 935px; top: 658px;" data-block-id="639112c6a89788403fef63cd372c6c78"><div class="sl-block-content" style="z-index: 21;"><img data-natural-width="2500" data-natural-height="449" style="" data-lazy-loaded="" data-src="musicoder/65acbc148ac42301c8e204882c9591b2.png"></div></div></section></section><section data-id="15b2b8f21b7227fe5e1cab6db62daf83"><div class="sl-block" data-block-type="text" data-block-id="ee38419021579419264156d8fbc0fd84" style="height: auto; min-width: 30px; min-height: 30px; width: 916px; left: 182px; top: 230px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="scale-down">
+<h1><span style="color:#008080"><strong><span style="font-size:1.2em">Thanks for Watching</span></strong></span></h1>
+</div></div></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":1260740,"slug":"musicoder","title":"MusiCoder-Intro(open version)","description":"Music Texture Transfer System","width":1280,"height":720,"visibility":"all","published_at":"2018-05-23T07:21:13.410Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/cbfbadf35e50e17b428ad0125d9a510c/thumb.jpg?1527060188","view_count":0,"user":{"id":774638,"username":"pzoom","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/7cef7374789c00ba683e434a8c857414?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":true,"pro":false,"lite":true,"team_id":null,"settings":{"id":625686,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"convex","transition":"default","theme_id":null,"theme_font":"palatino","theme_color":"yellow-black","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":21,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":1,"data_updated_at":1527060437700,"font_typekit":null,"font_google":null,"notes":{}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/head.min.js"></script>
+		<script src="lib/reveal.min.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 1280,
+				height: 720,
+				margin: 0.05,
+
+				controls: true,
+				progress: true,
+				history: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: false,
+
+				autoSlide: 0 || 0,
+				autoSlideStoppable: true,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+
+				transition: "default",
+				backgroundTransition: "convex",
+
+				dependencies: [
+					{ src: 'lib/reveal-plugins/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/reveal-plugins/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/reveal-plugins/highlight/highlight.js', async: true, callback: function() { hljs.initHighlighting(); hljs.initHighlightingOnLoad(); } },
+					{ src: 'lib/reveal-plugins/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+		</script>
+
+		
+
+	</body>
+</html>
