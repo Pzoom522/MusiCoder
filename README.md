@@ -78,6 +78,7 @@ __请分别解压并放置在 _converter/models_ 下__
 时间|奖项
 :-:|:-:
 2018-05-20|[第二十八届“冯如杯”科技竞赛信息技术类制作组一等奖](http://www.fengrubei.net/d1/article/287/)
+2018-05-27|[全国大学生人工智能创新大赛二等奖](http://www.yangpinwei.cn/chinakjh/)
 
 
 ## TODO
