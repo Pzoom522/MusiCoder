@@ -1,4 +1,4 @@
-# Supplementary Material 
-> for anonymity
+# 试听样例
 
-___MTTN: End-to-end Music Texture Transfer via Reconstructive Spectral Representation___(under review@ISMIR2018)
+本实验选取 _[水流音效](https://freesound.org/s/231298/)_、_[脉冲音效](https://freesound.org/s/169991/)_ 和 _[未来感音效](https://freesound.org/s/388750/)_ 作为目标质感，训练得到了对应网络，并选取不同流派、不同年代、不同演唱/演奏形式的许多歌曲进行了转换。
+
