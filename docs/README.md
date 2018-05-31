@@ -1,4 +1,4 @@
-# Open Slides
+# [Open Slides](https://pzoom522.github.io/MusiCoder/)
 
 > 基于第二十八届冯如杯科技竞赛“冠军路演赛”slides
 
