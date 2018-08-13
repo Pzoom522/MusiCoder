@@ -8,256 +8,693 @@
 </head>
 
 <body>
-    <h1><b><i>MusiCoder</i>——基于深度学习的轻量化音乐质感转换系统</b>试听样例
-</h1>
-  <hr />
-<h4>我们的发行版项目已经开源。欢迎点击<a href="https://github.com/Pzoom522/MusiCoder">此处</a>进行访问，或者点击<a href="https://musicoder.sourceforge.io">这里</a>查看可下载试用的客户端。<br>请您持续关注本页面，未来我们还将开放模型训练部分的源代码</h4>
-  
+    <h1 align="center"><b><i>MusiCoder</i>——基于深度学习的轻量化音乐质感转换系统</b>试听样例
+    </h1>
+    <hr />
+
 <h2><li>项目视频</li></h2>
   <center>
 <embed height="415" width="544" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="//static.hdslb.com/miniloader.swf" flashvars="aid=22386731&page=1" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>
 </center>
   
- 
-  <h2><li>目标质感</li></h2>
+
+
+
+ <h2><li>目标质感</li></h2>
     <p>我们选取以下三种音效作为目标质感。</p>
     <p>经<b>MusiCoder</b>的音频-频谱转化器得到的三种音效可视化结果如图，可见<b>脉冲音效</b>和<b>未来感音效</b>具有较高的相似度，<b>水流音效</b>则比较特殊。我们的听觉感知可以对这一结论进行验证。这从侧面反映了我们提出的频谱化表示对音频质感进行刻画的能力。</p>
 
-    <table border="1"  width="90%">
-      <tr>
-        <td><h3>脉冲音效</h3></td><td><h3>水流音效</h3></td><td><h3>未来感音效</h3></td>
-      </tr>
-      <tr>
-        <td><a href="https://freesound.org/s/169991/">laser_beam@Freesound</a></td>
-        <td><a href="https://freesound.org/s/231298/">water_pour@Freesound</a></td>
-        <td><a href="https://freesound.org/s/388750/">Dystopian Future@Freesound</a></td>
-      </tr>
-      <tr>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20audio/laser_10.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20audio/water_10.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20audio/future_10.mp3?raw=true" type="audio/mpeg"></audio>
-      </tr>
-      <tr>
-        <td><img width="100%" src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20audio/laser.jpg?raw=true" />  </td>
-        <td><img width="100%" src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20audio/water.jpg?raw=true" /></td>
-        <td><img width="100%" src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20audio/future.jpg?raw=true" /></td>
-      </tr>
+    <table border="1" width="90%" align="center">
+        <tr>
+            <td align="center"></td>
+            <td align="center">
+                <h4>"脉冲音效"</h3>
+            </td>
+            <td align="center">
+                <h4>"未来感音效"</h3>
+            </td>
+            <td align="center">
+                <h4>未来感音效</h3>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">素材源</td>
+            <td align="center">
+                <a href="https://freesound.org/s/169991/">laser_beam @ Freesound</a>
+            </td>
+            <td align="center">
+                <a href="https://freesound.org/s/231298/">water_pour @ Freesound</a>
+            </td>
+            <td align="center">
+                <a href="https://freesound.org/s/388750/">Dystopian_Future @ Freesound</a>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">样本</td>
+            <td align="center">
+                <audio controls>
+                    <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20audio/laser_10.mp3?raw=true"
+                        type="audio/mpeg">
+                </audio>
+            </td>
+            <td align="center">
+                <audio controls>
+                    <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20audio/water_10.mp3?raw=true"
+                        type="audio/mpeg">
+                </audio>
+            </td>
+            <td align="center">
+                <audio controls>
+                    <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20audio/future_10.mp3?raw=true"
+                        type="audio/mpeg">
+                </audio>
+        </tr>
+        <tr>
+            <td align="center">频谱</td>
+            <td align="center">
+                <img width="100%" src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20audio/laser.jpg?raw=true"
+                /> </td>
+            <td align="center">
+                <img width="100%" src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20audio/water.jpg?raw=true"
+                />
+            </td>
+            <td align="center">
+                <img width="100%" src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20audio/future.jpg?raw=true"
+                />
+            </td>
+        </tr>
     </table>
 
 
     <h2><li>音频质感转换</li></h2>
     <p>我们对风格流派、演奏方式、诞生年代、所属国家等属性各不相同的音乐进行了实验，结果如下。这些样例说明<b>MusiCoder</b>可以普适地实现音乐质感的成功转换。 </p>
-    <h3>Rather be(阿卡贝拉, Pentatonix.)</h3>
-    <table border="1">
-      <tr>
-        <td><h4>原曲</h4></td>
-        <td><h4>脉冲音效</h4></td>
-        <td><h4>水流音效</h4></td>
-        <td><h4>未来感音效</h4></td>
-      </tr>
-      <tr>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/akbl.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/akbl_10_laser.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/akbl_10_water.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/akbl_10_future.mp3?raw=true" type="audio/mpeg"></audio></td>
-      </tr>
-    </table>
+    
+    <div align="center">
+        <h3>Overfitting Thriller! (A Capella)</h3>
+        <table border="1">
+            <tr>
+                <td align="center">
+                    <h4>原曲</h4>
+                </td>
+                <td align="center">
+                    <h4>脉冲音效</h4>
+                </td>
+                <td align="center">
+                    <h4>水流音效</h4>
+                </td>
+                <td align="center">
+                    <h4>未来感音效</h4>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/oft.mp3?raw=true" type="audio/mpeg">
+                    </audio>
+                </td>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/oft_10_laser.mp3?raw=true"
+                            type="audio/mpeg">
+                    </audio>
+                </td>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/oft_10_water.mp3?raw=true"
+                            type="audio/mpeg">
+                    </audio>
+                </td>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/oft_10_future.mp3?raw=true"
+                            type="audio/mpeg">
+                    </audio>
+                </td>
+            </tr>
+        </table>
 
-    <h3>Kiss of Death(布鲁斯, Tinsley Ellis.)</h3>
-    <table border="1">
-      <tr>
-        <td><h4>原曲</h4></td>
-        <td><h4>脉冲音效</h4></td>
-        <td><h4>水流音效</h4></td>
-        <td><h4>未来感音效</h4></td>
-      </tr>
-      <tr>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/blues.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/blues_10_laser.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/blues_10_water.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/blues_10_future.mp3?raw=true" type="audio/mpeg"></audio></td>
-      </tr>
-    </table>
+        <h3>Τα Παιδιά Του Πειραιά (Popular)</h3>
+        <table border="1">
+            <tr>
+                <td align="center">
+                    <h4>原曲</h4>
+                </td>
+                <td align="center">
+                    <h4>脉冲音效</h4>
+                </td>
+                <td align="center">
+                    <h4>水流音效</h4>
+                </td>
+                <td align="center">
+                    <h4>未来感音效</h4>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/ta.mp3?raw=true" type="audio/mpeg">
+                    </audio>
+                </td>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/ta_10_laser.mp3?raw=true"
+                            type="audio/mpeg">
+                    </audio>
+                </td>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/ta_10_water.mp3?raw=true"
+                            type="audio/mpeg">
+                    </audio>
+                </td>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/ta_10_future.mp3?raw=true"
+                            type="audio/mpeg">
+                    </audio>
+                </td>
+            </tr>
+        </table>
 
-    <h3>GoodBye My Love(口琴, Robert Bonfiglio.)</h3>
-    <table border="1">
-      <tr>
-        <td><h4>原曲</h4></td>
-        <td><h4>脉冲音效</h4></td>
-        <td><h4>水流音效</h4></td>
-        <td><h4>未来感音效</h4></td>
-      </tr>
-      <tr>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/har.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/har_10_laser.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/har_10_water.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/har_10_future.mp3?raw=true" type="audio/mpeg"></audio></td>
-      </tr>
-    </table>
+        <h3>Ringtone material (@iPhone)</h3>
+        <table border="1">
+            <tr>
+                <td align="center">
+                    <h4>原曲</h4>
+                </td>
+                <td align="center">
+                    <h4>脉冲音效</h4>
+                </td>
+                <td align="center">
+                    <h4>水流音效</h4>
+                </td>
+                <td align="center">
+                    <h4>未来感音效</h4>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/iphone.mp3?raw=true" type="audio/mpeg">
+                    </audio>
+                </td>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/iphone_10_laser.mp3?raw=true"
+                            type="audio/mpeg">
+                    </audio>
+                </td>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/iphone_10_water.mp3?raw=true"
+                            type="audio/mpeg">
+                    </audio>
+                </td>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/iphone_10_future.mp3?raw=true"
+                            type="audio/mpeg">
+                    </audio>
+                </td>
+            </tr>
+        </table>
+        
+        <h3>小河淌水 (Folk)</h3>
+        <table border="1">
+            <tr>
+                <td align="center">
+                    <h4>原曲</h4>
+                </td>
+                <td align="center">
+                    <h4>脉冲音效</h4>
+                </td>
+                <td align="center">
+                    <h4>水流音效</h4>
+                </td>
+                <td align="center">
+                    <h4>未来感音效</h4>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/river.mp3?raw=true" type="audio/mpeg">
+                    </audio>
+                </td>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/river_10_laser.mp3?raw=true"
+                            type="audio/mpeg">
+                    </audio>
+                </td>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/river_10_water.mp3?raw=true"
+                            type="audio/mpeg">
+                    </audio>
+                </td>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/river_10_future.mp3?raw=true"
+                            type="audio/mpeg">
+                    </audio>
+                </td>
+            </tr>
+        </table>
+        
+        <h3>Kiss of Death (Blues)</h3>
+        <table border="1">
+            <tr>
+                <td align="center">
+                    <h4>原曲</h4>
+                </td>
+                <td align="center">
+                    <h4>脉冲音效</h4>
+                </td>
+                <td align="center">
+                    <h4>水流音效</h4>
+                </td>
+                <td align="center">
+                    <h4>未来感音效</h4>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/blues.mp3?raw=true" type="audio/mpeg">
+                    </audio>
+                </td>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/blues_10_laser.mp3?raw=true"
+                            type="audio/mpeg">
+                    </audio>
+                </td>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/blues_10_water.mp3?raw=true"
+                            type="audio/mpeg">
+                    </audio>
+                </td>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/blues_10_future.mp3?raw=true"
+                            type="audio/mpeg">
+                    </audio>
+                </td>
+            </tr>
+        </table>
 
-    <h3>Adieu, et tâche d'être heureux(音乐剧, Cathialine Andria.)</h3>
-    <table border="1">
-      <tr>
-        <td><h4>原曲</h4></td>
-        <td><h4>脉冲音效</h4></td>
-        <td><h4>水流音效</h4></td>
-        <td><h4>未来感音效</h4></td>
-      </tr>
-      <tr>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/adieu.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/adieu_10_laser.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/adieu_10_water.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/adieu_10_future.mp3?raw=true" type="audio/mpeg"></audio></td>
-      </tr>
-    </table>
+        <h3>GoodBye My Love (Harmonica)</h3>
+        <table border="1">
+            <tr>
+                <td align="center">
+                    <h4>原曲</h4>
+                </td>
+                <td align="center">
+                    <h4>脉冲音效</h4>
+                </td>
+                <td align="center">
+                    <h4>水流音效</h4>
+                </td>
+                <td align="center">
+                    <h4>未来感音效</h4>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/har.mp3?raw=true" type="audio/mpeg">
+                    </audio>
+                </td>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/har_10_laser.mp3?raw=true"
+                            type="audio/mpeg">
+                    </audio>
+                </td>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/har_10_water.mp3?raw=true"
+                            type="audio/mpeg">
+                    </audio>
+                </td>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/har_10_future.mp3?raw=true"
+                            type="audio/mpeg">
+                    </audio>
+                </td>
+            </tr>
+        </table>
 
-    <h3>Ringtone material(铃声, iPhone.)</h3>
-    <table border="1">
-      <tr>
-        <td><h4>原曲</h4></td>
-        <td><h4>脉冲音效</h4></td>
-        <td><h4>水流音效</h4></td>
-        <td><h4>未来感音效</h4></td>
-      </tr>
-      <tr>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/iphone.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/iphone_10_laser.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/iphone_10_water.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/iphone_10_future.mp3?raw=true" type="audio/mpeg"></audio></td>
-      </tr>
-    </table>
+        <h3>Rather be (A Capella)</h3>
+        <table border="1">
+            <tr>
+                <td align="center">
+                    <h4>原曲</h4>
+                </td>
+                <td align="center">
+                    <h4>脉冲音效</h4>
+                </td>
+                <td align="center">
+                    <h4>水流音效</h4>
+                </td>
+                <td align="center">
+                    <h4>未来感音效</h4>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/rb.mp3?raw=true" type="audio/mpeg">
+                    </audio>
+                </td>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/rb_10_laser.mp3?raw=true"
+                            type="audio/mpeg">
+                    </audio>
+                </td>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/rb_10_water.mp3?raw=true"
+                            type="audio/mpeg">
+                    </audio>
+                </td>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/rb_10_future.mp3?raw=true"
+                            type="audio/mpeg">
+                    </audio>
+                </td>
+            </tr>
+        </table>
 
-    <h3>Shape of You(说唱, Ed Sheeran.)</h3>
-    <table border="1">
-      <tr>
-        <td><h4>原曲</h4></td>
-        <td><h4>脉冲音效</h4></td>
-        <td><h4>水流音效</h4></td>
-        <td><h4>未来感音效</h4></td>
-      </tr>
-      <tr>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/shape.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/shape_10_laser.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/shape_10_water.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/shape_10_future.mp3?raw=true" type="audio/mpeg"></audio></td>
-      </tr>
-    </table>
+        <h3>Adieu, et tâche d'être heureux (Musical)</h3>
+        <table border="1">
+            <tr>
+                <td align="center">
+                    <h4>原曲</h4>
+                </td>
+                <td align="center">
+                    <h4>脉冲音效</h4>
+                </td>
+                <td align="center">
+                    <h4>水流音效</h4>
+                </td>
+                <td align="center">
+                    <h4>未来感音效</h4>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/adieu.mp3?raw=true" type="audio/mpeg">
+                    </audio>
+                </td>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/adieu_10_laser.mp3?raw=true"
+                            type="audio/mpeg">
+                    </audio>
+                </td>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/adieu_10_water.mp3?raw=true"
+                            type="audio/mpeg">
+                    </audio>
+                </td>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/adieu_10_future.mp3?raw=true"
+                            type="audio/mpeg">
+                    </audio>
+                </td>
+            </tr>
+        </table>
 
-    <h3>Hotel California(摇滚, Eagles.)</h3>
-    <table border="1">
-      <tr>
-        <td><h4>原曲</h4></td>
-        <td><h4>脉冲音效</h4></td>
-        <td><h4>水流音效</h4></td>
-        <td><h4>未来感音效</h4></td>
-      </tr>
-      <tr>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/eagles.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/eagles_10_laser.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/eagles_10_water.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/eagles_10_future.mp3?raw=true" type="audio/mpeg"></audio></td>
-      </tr>
-    </table>
+        <h3>Shape of You (Rap)</h3>
+        <table border="1">
+            <tr>
+                <td align="center">
+                    <h4>原曲</h4>
+                </td>
+                <td align="center">
+                    <h4>脉冲音效</h4>
+                </td>
+                <td align="center">
+                    <h4>水流音效</h4>
+                </td>
+                <td align="center">
+                    <h4>未来感音效</h4>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/shape.mp3?raw=true" type="audio/mpeg">
+                    </audio>
+                </td>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/shape_10_laser.mp3?raw=true"
+                            type="audio/mpeg">
+                    </audio>
+                </td>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/shape_10_water.mp3?raw=true"
+                            type="audio/mpeg">
+                    </audio>
+                </td>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/shape_10_future.mp3?raw=true"
+                            type="audio/mpeg">
+                    </audio>
+                </td>
+            </tr>
+        </table>
 
-    <h3>小河淌水(民谣, 龚琳娜.)</h3>
-    <table border="1">
-      <tr>
-        <td><h4>原曲</h4></td>
-        <td><h4>脉冲音效</h4></td>
-        <td><h4>水流音效</h4></td>
-        <td><h4>未来感音效</h4></td>
-      </tr>
-      <tr>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/river.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/river_10_laser.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/river_10_water.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/river_10_future.mp3?raw=true" type="audio/mpeg"></audio></td>
-      </tr>
-    </table>
+        <h3>Hotel California (Rock)</h3>
+        <table border="1">
+            <tr>
+                <td align="center">
+                    <h4>原曲</h4>
+                </td>
+                <td align="center">
+                    <h4>脉冲音效</h4>
+                </td>
+                <td align="center">
+                    <h4>水流音效</h4>
+                </td>
+                <td align="center">
+                    <h4>未来感音效</h4>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/eagles.mp3?raw=true" type="audio/mpeg">
+                    </audio>
+                </td>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/eagles_10_laser.mp3?raw=true"
+                            type="audio/mpeg">
+                    </audio>
+                </td>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/eagles_10_water.mp3?raw=true"
+                            type="audio/mpeg">
+                    </audio>
+                </td>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/eagles_10_future.mp3?raw=true"
+                            type="audio/mpeg">
+                    </audio>
+                </td>
+            </tr>
+        </table>
 
-    <h3>梁祝(小提琴, 盛中国.)</h3>
-    <h4>*此曲被用于生成冯如杯论文中的<i>图4 音乐质感转换各阶段频谱图</i></h4>
-    <table border="1">
-      <tr>
-        <td><h4>原曲</h4></td>
-        <td><h4>脉冲音效</h4></td>
-        <td><h4>水流音效</h4></td>
-        <td><h4>未来感音效</h4></td>
-      </tr>
-      <tr>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/liangzhu.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/liangzhu_10_laser.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/liangzhu_10_water.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/liangzhu_10_future.mp3?raw=true" type="audio/mpeg"></audio></td>
-      </tr>
-    </table>
-
-    <h3>Going home(萨克斯, Kenny G.)</h3>
-    <table border="1">
-      <tr>
-        <td><h4>原曲</h4></td>
-        <td><h4>脉冲音效</h4></td>
-        <td><h4>水流音效</h4></td>
-        <td><h4>未来感音效</h4></td>
-      </tr>
-      <tr>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/home.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/home_10_laser.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/home_10_water.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/home_10_future.mp3?raw=true" type="audio/mpeg"></audio></td>
-      </tr>
-    </table>
+        <h3>Going home (Saxophone)</h3>
+        <table border="1">
+            <tr>
+                <td align="center">
+                    <h4>原曲</h4>
+                </td>
+                <td align="center">
+                    <h4>脉冲音效</h4>
+                </td>
+                <td align="center">
+                    <h4>水流音效</h4>
+                </td>
+                <td align="center">
+                    <h4>未来感音效</h4>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/home.mp3?raw=true" type="audio/mpeg">
+                    </audio>
+                </td>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/home_10_laser.mp3?raw=true"
+                            type="audio/mpeg">
+                    </audio>
+                </td>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/home_10_water.mp3?raw=true"
+                            type="audio/mpeg">
+                    </audio>
+                </td>
+                <td align="center">
+                    <audio controls>
+                        <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/home_10_future.mp3?raw=true"
+                            type="audio/mpeg">
+                    </audio>
+                </td>
+            </tr>
+        </table>
 </body>
 
-<h3>幼女幻奏(动画歌曲, らんしゃましゃんしゃん)</h3>
+<h3>らんしゃましゃんしゃん♪ (Animation)</h3>
 <table border="1">
-  <tr>
-    <td><h4>原曲</h4></td>
-    <td><h4>脉冲音效</h4></td>
-    <td><h4>水流音效</h4></td>
-    <td><h4>未来感音效</h4></td>
-  </tr>
-  <tr>
-    <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/sing.mp3?raw=true" type="audio/mpeg"></audio></td>
-    <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/sing_10_laser.mp3?raw=true" type="audio/mpeg"></audio></td>
-    <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/sing_10_water.mp3?raw=true" type="audio/mpeg"></audio></td>
-    <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/sing_10_future.mp3?raw=true" type="audio/mpeg"></audio></td>
-  </tr>
+    <tr>
+        <td align="center">
+            <h4>原曲</h4>
+        </td>
+        <td align="center">
+            <h4>脉冲音效</h4>
+        </td>
+        <td align="center">
+            <h4>水流音效</h4>
+        </td>
+        <td align="center">
+            <h4>未来感音效</h4>
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <audio controls>
+                <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/sing.mp3?raw=true" type="audio/mpeg">
+            </audio>
+        </td>
+        <td align="center">
+            <audio controls>
+                <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/sing_10_laser.mp3?raw=true"
+                    type="audio/mpeg">
+            </audio>
+        </td>
+        <td align="center">
+            <audio controls>
+                <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/sing_10_water.mp3?raw=true"
+                    type="audio/mpeg">
+            </audio>
+        </td>
+        <td align="center">
+            <audio controls>
+                <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/sing_10_future.mp3?raw=true"
+                    type="audio/mpeg">
+            </audio>
+        </td>
+    </tr>
 </table>
 </body>
 
-    <h3>Come prima(流行, Dalida.)</h3>
-    <table border="1">
-      <tr>
-        <td><h4>原曲</h4></td>
-        <td><h4>脉冲音效</h4></td>
-        <td><h4>水流音效</h4></td>
-        <td><h4>未来感音效</h4></td>
-      </tr>
-      <tr>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/cp.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/cp_10_laser.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/cp_10_water.mp3?raw=true" type="audio/mpeg"></audio></td>
-        <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/cp_10_future.mp3?raw=true" type="audio/mpeg"></audio></td>
-      </tr>
-    </table>
-
-<h3>莫斯科郊外的晚上(合唱, 中央乐团合唱队.)</h3>
+<h3>Come prima (Popular)</h3>
 <table border="1">
-  <tr>
-    <td><h4>原曲</h4></td>
-    <td><h4>脉冲音效</h4></td>
-    <td><h4>水流音效</h4></td>
-    <td><h4>未来感音效</h4></td>
-  </tr>
-  <tr>
-    <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/mosco.mp3?raw=true" type="audio/mpeg"></audio></td>
-    <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/mosco_10_laser.mp3?raw=true" type="audio/mpeg"></audio></td>
-    <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/mosco_10_water.mp3?raw=true" type="audio/mpeg"></audio></td>
-    <td><audio controls><source src="https://github.com/Pzoom522/MusiCoder/tree/master/docs/audition/music/texture%20transfer/mosco_10_future.mp3?raw=true" type="audio/mpeg"></audio></td>
-  </tr>
+    <tr>
+        <td align="center">
+            <h4>原曲</h4>
+        </td>
+        <td align="center">
+            <h4>脉冲音效</h4>
+        </td>
+        <td align="center">
+            <h4>水流音效</h4>
+        </td>
+        <td align="center">
+            <h4>未来感音效</h4>
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <audio controls>
+                <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/cp.mp3?raw=true" type="audio/mpeg">
+            </audio>
+        </td>
+        <td align="center">
+            <audio controls>
+                <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/cp_10_laser.mp3?raw=true"
+                    type="audio/mpeg">
+            </audio>
+        </td>
+        <td align="center">
+            <audio controls>
+                <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/cp_10_water.mp3?raw=true"
+                    type="audio/mpeg">
+            </audio>
+        </td>
+        <td align="center">
+            <audio controls>
+                <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/cp_10_future.mp3?raw=true"
+                    type="audio/mpeg">
+            </audio>
+        </td>
+    </tr>
 </table>
 
+<h3>Подмосковные Вечера (Chorus)</h3>
+<table border="1">
+    <tr>
+        <td align="center">
+            <h4>原曲</h4>
+        </td>
+        <td align="center">
+            <h4>脉冲音效</h4>
+        </td>
+        <td align="center">
+            <h4>水流音效</h4>
+        </td>
+        <td align="center">
+            <h4>未来感音效</h4>
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <audio controls>
+                <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/mosco.mp3?raw=true" type="audio/mpeg">
+            </audio>
+        </td>
+        <td align="center">
+            <audio controls>
+                <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/mosco_10_laser.mp3?raw=true"
+                    type="audio/mpeg">
+            </audio>
+        </td>
+        <td align="center">
+            <audio controls>
+                <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/mosco_10_water.mp3?raw=true"
+                    type="audio/mpeg">
+            </audio>
+        </td>
+        <td align="center">
+            <audio controls>
+                <source src="https://github.com/MusiCoder-MMM2019/for-reviewers/blob/master/docs/music/texture%20transfer/mosco_10_future.mp3?raw=true"
+                    type="audio/mpeg">
+            </audio>
+        </td>
+    </tr>
+</table>
+
+</div>
 
 </body>
 
