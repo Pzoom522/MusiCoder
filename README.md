@@ -89,3 +89,8 @@ __请分别解压并放置在 _converter/models_ 下__
 - [ ] 发行OSX、Linux版本
 - [ ] 修复出现的bug
 - [ ] 开源训练代码
+
+## References
+Please cite us if you found this repo useful:
+
+> X. Peng, C. Li, Z. Cai, F. Shi, Y. Liu, and J. Li. _[A Lightweight Music Texture Transfer System](https://arxiv.org/abs/1810.01248)_. CoRR __abs/1810.01248__ (2018)
