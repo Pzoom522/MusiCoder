@@ -4,9 +4,6 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://sourceforge.net/projects/musicoder/)  [![made-with-python](https://img.shields.io/badge/Made%20with-Python-purple.svg)](https://www.python.org/)  [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)  [![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](https://github.com/Pzoom522/Musicoder/wiki)  [![AGPLv3 license](https://img.shields.io/badge/License-AGPLv3-blue.svg)](https://github.com/Pzoom522/MusiCoder/blob/master/LICENSE)  [![Status](https://img.shields.io/pypi/status/ansicolortags.svg)](https://github.com/Pzoom522/MusiCoder/releases)  [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/Pzoom522/MusiCoder/issues)  [![BUAA !](https://img.shields.io/badge/BUAAER%3F-yes-blue.svg)](http://www.buaa.edu.cn/)  
 
 ## 项目简介
-### 项目组件
-[Linux服务器端](https://github.com/Pzoom522/MusiCoder/tree/master/server)|[Windows客户端](https://github.com/Pzoom522/MusiCoder/tree/master/client-win)|[Mac OSX客户端(尚未发布)](https://github.com/Pzoom522/MusiCoder/tree/master/client-osx)
-:-:|:-:|:-:
 
 ### 使用方法
 - :wrench:下载发行版，请访问[release](https://github.com/Pzoom522/MusiCoder/releases)或[项目页面](https://sourceforge.net/projects/musicoder/)
@@ -14,27 +11,29 @@
 
 ### 介绍视频
 
-<p align="center"><img width="40%" src="docs/img/pic.png" /></p>
+<p align="center"><img width="70%" src="doc/img/pic.png?raw=true" /></p>
 
 
 ### 功能简介
 > 像给照片选取滤镜一样，自由地改变自己喜欢的音乐的风格与流派
-- :musical_note:基于深度学习算法，改变歌曲的质感（介绍相关算法的论文正在参与[MMM 2019](http://mmm2019.iti.gr)的双盲评审）；
+- :musical_note:基于深度学习算法，改变歌曲的质感；
 - :cloud:经过裁剪与优化的模型，可部署在低配置云服务器上，并借助我们的通讯组件与客户端实现相应交互式应用；
 - :bulb:轻量级跨平台客户端，资源占用更少，操作逻辑更简，输出时间更短，服务更具想象力。
 
 ### 整体架构
 
-![image](./doc/img/overview.png)
+<p align="center"><img width="70%" src="doc/img/overview.png" /></p>
 
 ---------
 ## MusiCoder-服务器端
 ### 数据流与架构
-![img](https://github.com/Pzoom522/MusiCoder/blob/master/doc/img/mttn.png?raw=true)
+
+<p align="center"><img width="75%" src="doc/img/backend.png" /></p>
+
 ### 配置及环境要求
 #### 基本配置
 - Ubuntu 12.04 LTS 及以上
-- 内存4G及以上
+- 内存4G及以上 (推荐)
 - Python 3 环境
 
 #### 所需主要依赖
@@ -55,11 +54,13 @@ __请分别解压并放置在 _converter/models_ 下__
  2. 执行命令，运行程序（后台静默模式）```nohup python3 server.py [port] &```
 
 ### 性能预估
-在配置为双核Intel® Xeon® CPU E5-26xx v4 CPU和4G内存的机子上，极限负载为同时承受约20个客户端的峰值任务。
+在配置为双核Intel® Xeon® CPU E5-26xx v4 CPU和4G内存的设备上，极限负载为同时承受约20个客户端的峰值任务。
 在正常连接情况下，服务器端程序应当可以对各类情况做出正确反馈。但是在客户端中途掉线时，可能会导致 ___temp___ 目录下出现残留文件，建议定时进行清除。
 
 ## MusiCoder-客户端
-![img](https://github.com/Pzoom522/MusiCoder/blob/master/doc/img/client.png?raw=true)
+
+<p align="center"><img width="70%" src="doc/img/client.png" /></p>
+
 ### 配置要求
 - 较新的Window系统。4G内存及以上。
 - 暂无特殊环境要求。如果发现，请在[issue](https://github.com/Pzoom522/MusiCoder/issues)中提出。
@@ -80,6 +81,6 @@ __请分别解压并放置在 _converter/models_ 下__
 - [ ] 开源训练代码
 
 ## References
-Please cite us if you found this repo useful:
+Please cite us and give a :star: if you found this repo useful:
 
 > X. Peng, C. Li, Z. Cai, F. Shi, Y. Liu, and J. Li. _[A Lightweight Music Texture Transfer System](https://arxiv.org/abs/1810.01248)_. CoRR __abs/1810.01248__ (2018)
