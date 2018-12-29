@@ -3,7 +3,7 @@
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://sourceforge.net/projects/musicoder/)  [![made-with-python](https://img.shields.io/badge/Made%20with-Python-purple.svg)](https://www.python.org/)  [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)  [![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](https://github.com/Pzoom522/Musicoder/wiki)  [![AGPLv3 license](https://img.shields.io/badge/License-AGPLv3-blue.svg)](https://github.com/Pzoom522/MusiCoder/blob/master/LICENSE)  [![Status](https://img.shields.io/pypi/status/ansicolortags.svg)](https://github.com/Pzoom522/MusiCoder/releases)  [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/Pzoom522/MusiCoder/issues)  [![BUAA !](https://img.shields.io/badge/BUAAER%3F-yes-blue.svg)](http://www.buaa.edu.cn/)  
 
-## 项目简介
+## :white_flower:项目简介
 
 ### 使用方法
 - :wrench:下载发行版，请访问[release](https://github.com/Pzoom522/MusiCoder/releases)或[项目页面](https://sourceforge.net/projects/musicoder/)
@@ -25,8 +25,8 @@
 <p align="center"><img width="75%" src="doc/img/overview.png" /></p>
 
 ---------
-## MusiCoder-服务器端
-### 数据流与架构
+## :small_red_triangle_down:MusiCoder-服务器端
+### 算法数据流
 
 <p align="center"><img width="75%" src="doc/img/backend.png" /></p>
 
@@ -57,7 +57,7 @@ __请分别解压并放置在 _converter/models_ 下__
 在配置为双核Intel® Xeon® CPU E5-26xx v4 CPU和4G内存的设备上，极限负载为同时承受约20个客户端的峰值任务。
 在正常连接情况下，服务器端程序应当可以对各类情况做出正确反馈。但是在客户端中途掉线时，可能会导致 ___temp___ 目录下出现残留文件，建议定时进行清除。
 
-## MusiCoder-客户端
+## :small_red_triangle:MusiCoder-客户端
 
 <p align="center"><img width="70%" src="doc/img/client.png" /></p>
 
@@ -72,7 +72,7 @@ __请分别解压并放置在 _converter/models_ 下__
 直接启动对应版本的安装包即可安装。安装完成后，联网条件下启动，进行使用。
 
 
-## TODO
+## :round_pushpin:TODO
 - [ ] 改善客户端交互
 - [ ] 提升后台速度(我们需要更好的服务器。欢迎投喂比特币
 :moneybag:到[1JyMBHSvReQYvoUDAKaKo9amABcLRqsjsq]())
@@ -80,7 +80,7 @@ __请分别解压并放置在 _converter/models_ 下__
 - [ ] 修复出现的bug
 - [ ] 开源训练代码
 
-## References
+## :link:References
 Please cite us and give a :star: if you found this repo useful:
 
 > X. Peng, C. Li, Z. Cai, F. Shi, Y. Liu, and J. Li. _[A Lightweight Music Texture Transfer System](https://arxiv.org/abs/1810.01248)_. CoRR __abs/1810.01248__ (2018)
