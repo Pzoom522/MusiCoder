@@ -13,13 +13,9 @@
 - :book:软件说明详见[帮助文档](https://github.com/Pzoom522/MusiCoder/wiki)
 
 ### 介绍视频
-<html>
-<center>
-<a href="https://www.bilibili.com/video/av22386731/" target="_blank">
-<img  width="60%" src="./doc/img/pic.png?raw=true" />
-</a>
-</center>
-</html>
+
+<p align="center"><img width="40%" src="docs/img/pic.png" /></p>
+
 
 ### 功能简介
 > 像给照片选取滤镜一样，自由地改变自己喜欢的音乐的风格与流派
