@@ -11,18 +11,18 @@
 
 ### 介绍视频
 
-<p align="center"><img width="70%" src="doc/img/pic.png?raw=true" /></p>
+<p align="center"><a href="https://www.bilibili.com/video/av22386731/" target="_blank"><img width="70%" src="doc/img/pic.png?raw=true" /></a></p>
 
 
 ### 功能简介
 > 像给照片选取滤镜一样，自由地改变自己喜欢的音乐的风格与流派
-- :musical_note:基于深度学习算法，改变歌曲的质感；
+- :musical_note:基于深度学习算法，改变歌曲的质感(已经完成封装，可以直接调用)；
 - :cloud:经过裁剪与优化的模型，可部署在低配置云服务器上，并借助我们的通讯组件与客户端实现相应交互式应用；
 - :bulb:轻量级跨平台客户端，资源占用更少，操作逻辑更简，输出时间更短，服务更具想象力。
 
 ### 整体架构
 
-<p align="center"><img width="70%" src="doc/img/overview.png" /></p>
+<p align="center"><img width="75%" src="doc/img/overview.png" /></p>
 
 ---------
 ## MusiCoder-服务器端
