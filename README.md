@@ -1,13 +1,14 @@
 ![image](./doc/img/llogo.png)
 # 基于深度学习的轻量化音乐质感转换系统
 
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://sourceforge.net/projects/musicoder/) [![Open Source Helpers](https://www.codetriage.com/pzoom522/musicoder/badges/users.svg)](https://www.codetriage.com/pzoom522/musicoder) [![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](https://github.com/Pzoom522/Musicoder/wiki)  [![996ICU license](https://img.shields.io/badge/License-996ICU-brown.svg)](https://github.com/Pzoom522/MusiCoder/blob/master/LICENSE)  [![Status](https://img.shields.io/pypi/status/ansicolortags.svg)](https://github.com/Pzoom522/MusiCoder/releases)  [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/Pzoom522/MusiCoder/issues)  [![BUAA !](https://img.shields.io/badge/BUAAER%3F-yes-blue.svg)](http://www.buaa.edu.cn/)  [![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-no-orange.svg)](https://sourceforge.net/projects/musicoder/) [![Open Source Helpers](https://www.codetriage.com/pzoom522/musicoder/badges/users.svg)](https://www.codetriage.com/pzoom522/musicoder) [![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](https://github.com/Pzoom522/Musicoder/wiki)  [![Status](https://img.shields.io/pypi/status/ansicolortags.svg)](https://github.com/Pzoom522/MusiCoder/releases)  [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/Pzoom522/MusiCoder/issues)  [![BUAA !](https://img.shields.io/badge/BUAAER%3F-yes-blue.svg)](http://www.buaa.edu.cn/)  [![996ICU license](https://img.shields.io/badge/License-996ICU-brown.svg)](https://github.com/Pzoom522/MusiCoder/blob/master/LICENSE)  [![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
 
 ## :white_flower:项目简介
 
 ### 使用方法
 - :wrench:下载发行版，请访问[release](https://github.com/Pzoom522/MusiCoder/releases)或[项目页面](https://sourceforge.net/projects/musicoder/)
 - :book:软件说明详见[帮助文档](https://github.com/Pzoom522/MusiCoder/wiki)
+- :warning: 在上线一年后，__我们已于2019.04.08正式停服__。您可以自行配置后台进行体验。感谢您的支持！
 
 ### 介绍视频
 
@@ -65,22 +66,22 @@ __请分别解压并放置在 _converter/models_ 下__
 - 较新的Window系统。4G内存及以上。
 - 暂无特殊环境要求。如果发现，请在[issue](https://github.com/Pzoom522/MusiCoder/issues)中提出。
 
-### 数据传输信息
-此次客户端发行版本所连接的服务器[ip:端口]为[140.143.62.99:2333]
-此服务器性能较差（__双核cup，4G内存__）。如果想部署自己的服务，请针对服务器进行重新配置。具体的调整详见[帮助文档](https://github.com/Pzoom522/MusiCoder/wiki/2.0-Requirements-&-Installation#%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2)
-### 安装及运行说明
-直接启动对应版本的安装包即可安装。安装完成后，联网条件下启动，进行使用。
+### ~~数据传输信息~~
+~~此次客户端发行版本所连接的服务器[ip:端口]为[140.143.62.99:2333]~~
+~~此服务器性能较差（__双核cup，4G内存__）。如果想部署自己的服务，请针对服务器进行重新配置。具体的调整详见[帮助文档](https://github.com/Pzoom522/MusiCoder/wiki/2.0-Requirements-&-Installation#%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2)~~
+### ~~安装及运行说明~~
+~~直接启动对应版本的安装包即可安装。安装完成后，联网条件下启动，进行使用。~~
 
-
-## :round_pushpin:TODO
-- [ ] 改善客户端交互
-- [ ] 提升后台速度(我们需要更好的服务器。欢迎投喂比特币
-:moneybag:到[1JyMBHSvReQYvoUDAKaKo9amABcLRqsjsq]())
-- [ ] 发行OSX、Linux版本
-- [ ] 修复出现的bug
-- [ ] 开源训练代码
 
 ## :link:References
 Please cite us and give a :star: if you found this repo useful:
 
-> X. Peng, C. Li, Z. Cai, F. Shi, Y. Liu, and J. Li. _[A Lightweight Music Texture Transfer System](https://arxiv.org/abs/1810.01248)_. CoRR __abs/1810.01248__ (2018)
+```
+@misc{peng2018MusiCoder,
+    title={A Lightweight Music Texture Transfer System},
+    author={Xutan Peng and Chen Li and Zhi Cai and Faqiang Shi and Yidan Liu and Jianxin Li},
+    year={2018},
+    eprint={1810.01248},
+    archivePrefix={arXiv}
+}
+```
