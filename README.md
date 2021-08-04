@@ -79,7 +79,7 @@ Please cite us and give a :star: if you found this repo useful:
 ```
 @misc{peng2018MusiCoder,
     title={A Lightweight Music Texture Transfer System},
-    author={Xutan Peng and Chenghua Lin and Chen Li and Zhi Cai and Jianxin Li},
+    author={Xutan Peng and Chen Li and Zhi Cai and Faqiang Shi and Yidan Liu and Jianxin Li},
     year={2018},
     eprint={1810.01248},
     archivePrefix={arXiv}
